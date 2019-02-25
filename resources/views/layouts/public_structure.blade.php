@@ -7,6 +7,7 @@
     @yield('links')
   </head>
   <body>
+    <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1a1a1a;">
       <div class="container-fluid">
         <a class="navbar-brand" style="color: #ffffff">ParqueaderosUM</a>
@@ -33,6 +34,28 @@
       </div>
     </nav>
     @yield('content')
+
+    <!--footer-->
+    <footer>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="img/man.png" id="developerPhoto">
+          </div>
+          <div class="col-md-4">
+            <p>Sebastian Villada M. Estudiante de Ingenieria de sistemas
+            delaUniversidad Autonoma de Manizales</p>
+          </div>
+          <div class="col-md-4">
+            <h1>Contacto</h1>
+            <hr>
+            <h3>Tel:555-555-555</h3>
+            <h3>whatever@gmail.com</h3>
+            <h3>Manizels,Caldas</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

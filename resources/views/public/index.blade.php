@@ -30,27 +30,28 @@
     <div class="carousel-item">
       <img src="img/home_carousel3.jpg">
       <div class="carousel-caption" id="caraouselCapRed">
-        <h3>ingresa desde tu computador</h3>
-        <h3>o desde tu dispositivo movil</h3>
-        <h5>descarga la aplicacion y disfruta tu experiencia</h5>
+        <h1>ingresa desde tu computador</h1>
+        <h1>o desde tu dispositivo movil</h1>
+        <h3>descarga la aplicacion y disfruta tu experiencia</h3>
       </div>
     </div>
   </div>
 </div>
 
 <!--seccion de informacion-->
-<div class="container-fluid">
+<div class="container-fluid padding" id="welcomePagraf">
   <div class="text-center">
     <div class="col-12">
-      <p class="lead">texto cualquiera.texto cualquiera.texto cualquiera.texto cualquiera.
-      texto cualquiera.texto cualquiera.texto cualquiera.texto cualquiera.texto cualquiera.
-    texto cualquiera.texto cualquiera.texto cualquiera.texto cualquiera.</p>
+      <p class="lead">Una aplicacion facil de usar y amigable con el usuario, ingresa por medio de
+      tu navegador web preferido o descarga la aplicacion en tu dipositivo movil para un acceso facil
+      y rapido. Has parte de nuestra comunidad, resgistrate y obten grandes beneficios y los ultimos datos
+      de tus lugares de mayor interez.</p>
     <hr>
     </div>
   </div>
 </div>
 
-<div class="container-fluid padding">
+<div class="container-fluid padding" id="tools">
   <div class="row text-center">
     <div class="col-xm-12 col-sm-6 col-md-4 col-lg-3">
       <h3>HTML5</h3>
@@ -68,6 +69,7 @@
       <h3>Bootstrap</h3>
       <p>La mejor apraiencia y experienca para el usuario</p>
     </div>
+    <hr>
   </div>
 </div>
 @stop

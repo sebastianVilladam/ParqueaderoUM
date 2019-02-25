@@ -6,6 +6,7 @@
 
 .carousel-caption
 {
+  color: #808080;
   position: absolute;
   top: 50%;
   transform: translateY(-70%);
@@ -22,12 +23,18 @@
   background: #ff0000;
 }
 
-#caraouselCapBlack
+#welcomePagraf
 {
-  color: #0d0d0d;
+  padding: 50px 10px 50px 10px;
 }
 
-#caraouselCapRed
+#tools
 {
-  color: #b30000;
+  padding: 0px 10px 150px 10px;
+}
+
+#developerPhoto
+{
+  width: 100px;
+  height: 100px;
 }
