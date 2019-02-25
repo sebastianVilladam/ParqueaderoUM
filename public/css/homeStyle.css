@@ -1,0 +1,33 @@
+.carousel-inner img
+{
+    width: 100%;
+    height: 50%
+}
+
+.carousel-caption
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+}
+
+#btCarousel
+{
+  background: #b30000;
+  color: #0d0d0d;
+}
+
+#btCarousel:hover
+{
+  background: #ff0000;
+}
+
+#caraouselCapBlack
+{
+  color: #0d0d0d;
+}
+
+#caraouselCapRed
+{
+  color: #b30000;
+}

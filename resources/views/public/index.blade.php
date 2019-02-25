@@ -16,14 +16,24 @@
       <div class="carousel-caption">
         <h1 class="display-2">Unete!!</h1>
         <h3>la mejor aplicacion del mercado</h3>
-        <button type="button" class="btn btn-outline btn-lg">Registrarse</button>
+        <h3>Registrate y obten grandes beneficios</h3>
+        <button type="button" class="btn btn-outline btn-lg" id="btCarousel">Registrarse</button>
       </div>
     </div>
     <div class="carousel-item">
       <img src="img/home_carousel2.jpg">
+      <div class="carousel-caption" id="caraouselCapBlack">
+        <h3>Ayuda a tu universidad a ser la mejor.</h3>
+        <h2>Que sea un paso al futuro</h2>
+      </div>
     </div>
     <div class="carousel-item">
       <img src="img/home_carousel3.jpg">
+      <div class="carousel-caption" id="caraouselCapRed">
+        <h3>ingresa desde tu computador</h3>
+        <h3>o desde tu dispositivo movil</h3>
+        <h5>descarga la aplicacion y disfruta tu experiencia</h5>
+      </div>
     </div>
   </div>
 </div>
