@@ -6,29 +6,41 @@
 
 .carousel-caption
 {
-  color: #808080;
+  color: white;
   position: absolute;
   top: 50%;
   transform: translateY(-70%);
 }
 
+#pink-title
+{
+  color: #fa0140;
+}
+
 #btCarousel
 {
-  background: #b30000;
-  color: #0d0d0d;
+  background: black;
+  opacity: .5;
+  color: #fa0140;
+  border-color: #fa0140;
 }
 
 #btCarousel:hover
 {
-  background: #ff0000;
+  background: #fa0140;
+  color: white;
 }
 
 #welcomePagraf
 {
   padding: 50px 10px 50px 10px;
+  color: white;
+  background-color: #2e2e2e;
 }
 
 #tools
 {
-  padding: 0px 10px 150px 10px;
+  padding: 50px 0px 50px 0px;
+  color: white;
+  background-color: #1a1a1a;
 }

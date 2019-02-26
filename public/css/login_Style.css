@@ -13,9 +13,10 @@
   border-color: #1a1a1a;
 }
 
-.card-header h3
+.card-header
 {
-  color: #1a1a1a;
+  color: #fa0140;
+  background-color: #2e2e2e;
 }
 
 .card-body
@@ -26,12 +27,14 @@
 
 #btn-login
 {
-  background: #b30000;
-  color: #0d0d0d;
-  border: #b30000;
+  background: #1a1a1a;
+  opacity: .5;
+  color: #fa0140;
+  border-color: #fa0140;
 }
 
 #btn-login:hover
 {
-  background: #ff0000;
+  background: #fa0140;
+  color: white;
 }

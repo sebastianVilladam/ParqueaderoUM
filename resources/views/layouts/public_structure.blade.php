@@ -11,7 +11,7 @@
     <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1a1a1a;">
       <div class="container-fluid">
-        <a class="navbar-brand" style="color: #ffffff">ParqueaderosUM</a>
+        <a class="navbar-brand" style="color: #fa0140">ParqueaderosUM</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
