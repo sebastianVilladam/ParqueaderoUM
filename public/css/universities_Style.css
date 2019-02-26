@@ -1,0 +1,94 @@
+#head
+{
+  background-color: #2a2a2a;I
+}
+
+.img-head
+{
+  width: 100%;
+  height: 50%;
+  padding: 0px 0px 0px 0px;
+}
+
+#head h1
+{
+  font-weight: 900;
+  font-size: 40px;
+  color: #fa0140;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#head h3
+{
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#head h4
+{
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#btn-head
+{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  opacity: .5;
+  color: #fa0140;
+  border-color: #fa0140;
+}
+
+#btn-head:hover
+{
+  background: #fa0140;
+  opacity: 1;
+  color: white;
+}
+
+#cards-section
+{
+  background-color: #1a1a1a;
+  padding: 50px 0px 50px 0px;
+}
+
+.card
+{
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.col-md-4
+{
+  padding: 10px 0px 10px 100px;
+}
+
+.card-title
+{
+  color: #fa0140;
+}
+
+#btn-card
+{
+  background: #2a2a2a;
+  color: #fa0140;
+  border-color: #fa0140;
+}
+
+#btn-card:hover
+{
+  background: #fa0140;
+  color: white;
+}
