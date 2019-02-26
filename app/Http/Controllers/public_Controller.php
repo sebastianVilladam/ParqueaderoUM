@@ -9,5 +9,10 @@ class public_Controller extends Controller
   {
     return view('public.index');
   }
+
+  public function parking()
+  {
+    return view('public.universities');
+  }
 }
 ?>

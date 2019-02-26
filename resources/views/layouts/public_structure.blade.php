@@ -22,7 +22,7 @@
               <a class="nav-link"  href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="/parking">Parking</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/login">Incicar sesion</a>

@@ -28,6 +28,7 @@
 #btCarousel:hover
 {
   background: #fa0140;
+  opacity: 1;
   color: white;
 }
 

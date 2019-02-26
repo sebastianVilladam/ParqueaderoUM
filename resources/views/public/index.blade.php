@@ -17,7 +17,7 @@
         <h1 class="display-2" id="pink-title">Unete!!</h1>
         <h3>la mejor aplicacion del mercado</h3>
         <h3>Registrate y obten grandes beneficios</h3>
-        <button type="button" class="btn btn-outline btn-lg" id="btCarousel">Registrarse</button>
+        <button type="button" class="btn btn-outline btn-lg" id="btCarousel" onclick="location.href='/register'">Registrarse</button>
       </div>
     </div>
     <div class="carousel-item">
