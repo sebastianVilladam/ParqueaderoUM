@@ -1,6 +1,6 @@
-#login-container
+#register-container
 {
-  background-image: url("../img/login_Bg.jpg");
+  background-image: url("../img/register_Bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
@@ -18,20 +18,26 @@
   color: #1a1a1a;
 }
 
+h1
+{
+  padding: 0px 0px 50px 0px;
+  color: #ffffff;
+}
+
 .card-body
 {
   background-color: #1a1a1a;
   color: #ffffff;
 }
 
-#btn-login
+#btn-register
 {
   background: #b30000;
   color: #0d0d0d;
   border: #b30000;
 }
 
-#btn-login:hover
+#btn-register:hover
 {
   background: #ff0000;
 }
