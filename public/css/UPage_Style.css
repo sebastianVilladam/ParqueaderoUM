@@ -1,0 +1,34 @@
+#title
+{
+  background-color: #2a2a2a;
+  padding: 50px 0px 50px 0px;
+  color: #fa0140;
+}
+
+#table
+{
+  background-image: url("../img/UAM/UAM.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #1a1a1a;
+  padding: 50px 0px 50px 0px;
+}
+
+.list-group
+{
+  width: 40%;
+  transform: translateX(70%);
+}
+
+.list-group-item
+{
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.list-group-item:hover
+{
+  border-color: #fa0140;
+  color: #fa0140;
+  background-color: #2a2a2a;
+}
