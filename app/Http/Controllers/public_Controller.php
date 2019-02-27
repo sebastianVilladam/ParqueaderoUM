@@ -14,5 +14,10 @@ class public_Controller extends Controller
   {
     return view('public.universities');
   }
+
+  public function parkingU()
+  {
+    return view('public.UPage');
+  }
 }
 ?>

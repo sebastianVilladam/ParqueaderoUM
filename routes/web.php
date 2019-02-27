@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'public_Controller@home')->name('home');
 
 Route::get('/parking', 'public_Controller@parking')->name('parking');
+
+Route::get('/parking/universidad', 'public_Controller@parkingU')->name('parkingU');
