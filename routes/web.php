@@ -23,6 +23,6 @@ Route::get('/', 'public_Controller@home')->name('home');
 
 Route::get('/parking', 'public_Controller@parking')->name('parking');
 
-Route::get('/parking/universidad', 'public_Controller@parkingU')->name('parkingU');
+Route::get('/universidad', 'public_Controller@parkingU')->name('parkingU');
 
-Route::get('/parking/universidad/parqueadero', 'public_Controller@parkingLot')->name('parkingLot');
+Route::get('/parqueadero', 'public_Controller@parkingLot')->name('parkingLot');

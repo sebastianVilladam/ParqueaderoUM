@@ -22,7 +22,7 @@
         <div class="card-body">
           <h4 class="card-title">Universidad</h4>
           <p class="card-text">De la ciudad de Manizales</p>
-          <a href="parking/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
+          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
         <div class="card-body">
           <h4 class="card-title">Universidad</h4>
           <p class="card-text">De la ciudad de Manizales</p>
-          <a href="parking/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
+          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
         <div class="card-body">
           <h4 class="card-title">Universidad</h4>
           <p class="card-text">De la ciudad de Manizales</p>
-          <a href="parking/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
+          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@
         <div class="card-body">
           <h4 class="card-title">Universidad</h4>
           <p class="card-text">De la ciudad de Manizales</p>
-          <a href="parking/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
+          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
         <div class="card-body">
           <h4 class="card-title">Universidad</h4>
           <p class="card-text">De la ciudad de Manizales</p>
-          <a href="parking/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
+          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
         <div class="card-body">
           <h4 class="card-title">Universidad</h4>
           <p class="card-text">De la ciudad de Manizales</p>
-          <a href="parking/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
+          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
         </div>
       </div>
     </div>

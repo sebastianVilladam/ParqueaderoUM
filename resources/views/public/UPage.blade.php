@@ -14,11 +14,11 @@
 <!--parking lots section-->
 <div class="container-fluid padding center" id="table">
   <div class="list-group">
-    <a href="/parking/universidad/parqueadero" class="list-group-item list-group-item-action">Parqueadero 1</a>
-    <a href="/parking/universidad/parqueadero" class="list-group-item list-group-item-action">Parqueadero 2</a>
-    <a href="/parking/universidad/parqueadero" class="list-group-item list-group-item-action">Parqueadero 3</a>
-    <a href="/parking/universidad/parqueadero" class="list-group-item list-group-item-action">Parqueadero 4</a>
-    <a href="/parking/universidad/parqueadero" class="list-group-item list-group-item-action">Parqueadero 5</a>
+    <a href="/parqueadero" class="list-group-item list-group-item-action">Parqueadero 1</a>
+    <a href="/parqueadero" class="list-group-item list-group-item-action">Parqueadero 2</a>
+    <a href="/parqueadero" class="list-group-item list-group-item-action">Parqueadero 3</a>
+    <a href="/parqueadero" class="list-group-item list-group-item-action">Parqueadero 4</a>
+    <a href="/parqueadero" class="list-group-item list-group-item-action">Parqueadero 5</a>
   </div>
 </div>
 @stop
