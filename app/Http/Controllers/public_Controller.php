@@ -19,5 +19,10 @@ class public_Controller extends Controller
   {
     return view('public.UPage');
   }
+
+  public function parkingLot()
+  {
+    return view('public.parkingLot');
+  }
 }
 ?>

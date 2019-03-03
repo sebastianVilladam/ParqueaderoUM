@@ -45,7 +45,7 @@
           </div>
           <div class="col-md-4">
             <p>Sebastian Villada M. Estudiante de Ingenieria de sistemas
-            delaUniversidad Autonoma de Manizales</p>
+            de la Universidad Autonoma de Manizales</p>
           </div>
           <div class="col-md-4">
             <h1>Contacto</h1>
