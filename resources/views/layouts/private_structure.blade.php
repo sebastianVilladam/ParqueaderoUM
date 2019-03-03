@@ -7,6 +7,17 @@
     @yield('links')
   </head>
   <body>
+    <!--side navbar-->
+    <span class="open-slide">
+      <a href="#">
+        <svg width="30" heigth="30">
+          <path d="M0,5 30,5" stroke="#1a1a1a" stroke-width="5"/>
+          <path d="M0,5 30,5" stroke="#1a1a1a" stroke-width="5"/>
+          <path d="M0,5 30,5" stroke="#1a1a1a" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
     @yield('content')
   </body>
 </html>

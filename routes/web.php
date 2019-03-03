@@ -26,3 +26,5 @@ Route::get('/parking', 'public_Controller@parking')->name('parking');
 Route::get('/universidad', 'public_Controller@parkingU')->name('parkingU');
 
 Route::get('/parqueadero', 'public_Controller@parkingLot')->name('parkingLot');
+
+Route::get('/favoritos', 'public_Controller@fav')->name('fav');
