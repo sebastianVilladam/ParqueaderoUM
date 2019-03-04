@@ -14,7 +14,7 @@
         <img class="card-imd-top" src="img/university.jpg" >
         <div class="card-body">
           <h4 class="card-title">Biblioteca</h4>
-          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">Ingresar</a>
+          <a href="/zonaLaboral" class="btn btn-outline-secondary" id="btn-card">Ingresar</a>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
         <img class="card-imd-top" src="img/university.jpg" >
         <div class="card-body">
           <h4 class="card-title">Fundadores</h4>
-          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">Ingresar</a>
+          <a href="/zonaLaboral" class="btn btn-outline-secondary" id="btn-card">Ingresar</a>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
         <img class="card-imd-top" src="img/university.jpg" >
         <div class="card-body">
           <h4 class="card-title">Edf principal</h4>
-          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">Ingresar</a>
+          <a href="/zonaLaboral" class="btn btn-outline-secondary" id="btn-card">Ingresar</a>
         </div>
       </div>
     </div>

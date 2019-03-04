@@ -9,5 +9,10 @@ class Employees_controller extends Controller
   {
     return view('employees.selection');
   }
+
+  public function place()
+  {
+    return view('employees.laborPlace');
+  }
 }
 ?>
