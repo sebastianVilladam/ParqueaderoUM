@@ -1,0 +1,22 @@
+#cards-section
+{
+  padding: 50px 0px 30px 80px;
+}
+
+.card-body
+{
+    background-color: #2a2a2a;
+    color: white;
+}
+
+#btn-card
+{
+  border-color: #fa0140;
+  color: #fa0140;
+}
+
+#btn-card:hover
+{
+  background-color: #fa0140;
+  color: white;
+}
