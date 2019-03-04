@@ -9,11 +9,11 @@
 <!--Favorite section-->
 <div class="container-fluid padding center" id="table">
   <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action">Parqueadero biblioteca
+    <a href="/fav" class="list-group-item list-group-item-action">Parqueadero biblioteca
     <span class="badge badge-primary badge-pill">2</span></a>
-    <a href="#" class="list-group-item list-group-item-action">Parqueadero fundadores
+    <a href="/fav" class="list-group-item list-group-item-action">Parqueadero fundadores
     <span class="badge badge-primary badge-pill">5</span></a>
-    <a href="#" class="list-group-item list-group-item-action">Parqueadero edf principal
+    <a href="/fav" class="list-group-item list-group-item-action">Parqueadero edf principal
     <span class="badge badge-primary badge-pill">10</span></a>
   </div>
 </div>

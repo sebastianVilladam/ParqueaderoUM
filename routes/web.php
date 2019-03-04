@@ -19,12 +19,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/', 'public_Controller@home')->name('home');
+Route::get('/', 'Public_Controller@home')->name('home');
 
-Route::get('/parking', 'public_Controller@parking')->name('parking');
+Route::get('/parking', 'Public_Controller@parking')->name('parking');
 
-Route::get('/universidad', 'public_Controller@parkingU')->name('parkingU');
+Route::get('/universidad', 'Public_Controller@parkingU')->name('parkingU');
 
-Route::get('/parqueadero', 'public_Controller@parkingLot')->name('parkingLot');
+Route::get('/parqueadero', 'Public_Controller@parkingLot')->name('parkingLot');
 
-Route::get('/favoritos', 'public_Controller@fav')->name('fav');
+Route::get('/favoritos', 'Public_Controller@fav')->name('fav');
+
+Route::get('/fav', 'Private_controller@fav')->name('favP');
