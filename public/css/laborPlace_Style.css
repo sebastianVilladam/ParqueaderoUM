@@ -1,0 +1,68 @@
+#register-form
+{
+  padding: 50px 0 100px 0;
+}
+
+.form-group
+{
+    padding: 0px 300px 0 300px;
+}
+
+#btn-in
+{
+  color: #1a1a1a;
+  background-color: white;
+  border-color: #fa0140;
+}
+
+#btn-in:hover
+{
+  color: white;
+  background-color: #fa0140;
+}
+
+#btn-out
+{
+  color: white;
+  background-color: #fa0140;
+  border-color: #fa0140;
+}
+
+#btn-out:hover
+{
+  color: #1a1a1a;
+  background-color: white;
+}
+
+#info-section
+{
+  padding: 50px 0 50px 0;
+  background-color: #1a1a1a;
+}
+
+#title1
+{
+  color: white;
+}
+
+#title2
+{
+  color: #fa0140;
+}
+
+#history-section
+{
+  color: white;
+  padding: 50px 0 100px 0;
+  background-color: #2a2a2a;
+}
+
+.list-group
+{
+  padding: 50px 200px 50px 200px;
+}
+
+.list-group-item
+{
+  background-color: #1a1a1a;
+}
