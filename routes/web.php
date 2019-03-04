@@ -32,3 +32,5 @@ Route::get('/favoritos', 'Public_Controller@fav')->name('fav');
 Route::get('/fav', 'Private_controller@fav')->name('favP');
 
 Route::get('/Mi cuenta', 'Private_controller@settings')->name('acountSettings');
+
+Route::get('/seleccion', 'Employees_controller@selection')->name('selection');
