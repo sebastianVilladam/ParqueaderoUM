@@ -9,5 +9,10 @@ class Private_controller extends Controller
   {
     return view('private.fav_ParkingLot');
   }
+
+  public function settings()
+  {
+    return view('private.acountSettings');
+  }
 }
 ?>

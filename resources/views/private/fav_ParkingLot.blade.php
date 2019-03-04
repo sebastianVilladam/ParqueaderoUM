@@ -17,7 +17,7 @@
       <h4>sabados: 8:00 - 17:00</h4>
     </div>
     <div class="text-center col-sm-12 col-md-6 col-lg-4">
-      <button type="button" class="btn btn-outline btn-lg" id="btn-head" onclick="location.href='/universidad'">
+      <button type="button" class="btn btn-outline btn-lg" id="btn-head" onclick="location.href='/favoritos'">
         Regresar</button>
     </div>
   </div>

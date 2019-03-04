@@ -16,10 +16,10 @@
         <ul>
           <img src="img/man.png" id="user-photo">
           <p class="text-center">Nombre se usuario</p>
-          <li><a href="#">FAVORITOS</a></li>
-          <li><a href="#">DATOS DE CUENTA</a></li>
-          <li><a href="#">PARKING</a></li>
-          <li><a href="#">CERRAR SESION</a></li>
+          <li><a href="/favoritos">FAVORITOS</a></li>
+          <li><a href="/Mi cuenta">DATOS DE CUENTA</a></li>
+          <li><a href="/parking">PARKING</a></li>
+          <li><a href="/login">CERRAR SESION</a></li>
         </ul>
       </nav>
 
