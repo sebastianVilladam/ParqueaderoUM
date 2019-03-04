@@ -6,14 +6,29 @@
 <h1>PARQUEADERO FUNDADORES</h1>
 <hr>
 
+<!--search section-->
+<div class="container-fluid">
+  <form class="form-inline">
+    <div class="form-group mb-2">
+      <label for="staticEmail2" class="sr-only">Busqueda de informacion porplaca:</label>
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Busqueda de placa:">
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="inputPassword2" class="sr-only">placa</label>
+      <input type="text" class="form-control" id="inputPassword2" placeholder="Placa del vehiculo">
+    </div>
+    <button type="submit" class="btn btn-primary mb-2" id="btn-out">Buscar</button>
+  </form>
+</div>
+
 <!--vehicle plate register section-->
 <div class="container-fluid" id="register-form">
   <form method="post">
-    <div class="form-group">
+    <div class="form-group" id="register-input">
       <label for="exampleFormControlInput1">PLACA DEL VEHICULO:</label>
       <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ABC123">
     </div>
-    <div class="form-group">
+    <div class="form-group" id="register-input">
       <label for="exampleFormControlTextarea1">OBSERVACIONES:</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
