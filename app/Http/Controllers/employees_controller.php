@@ -14,5 +14,10 @@ class Employees_controller extends Controller
   {
     return view('employees.laborPlace');
   }
+
+  public function search()
+  {
+    return view('employees.plateSearch');
+  }
 }
 ?>

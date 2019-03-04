@@ -17,7 +17,7 @@
       <label for="inputPassword2" class="sr-only">placa</label>
       <input type="text" class="form-control" id="inputPassword2" placeholder="Placa del vehiculo">
     </div>
-    <button type="submit" class="btn btn-primary mb-2" id="btn-out">Buscar</button>
+    <button type="button" class="btn btn-primary mb-2" id="btn-out" onclick="location.href='/busqueda'">Buscar</button>
   </form>
 </div>
 
