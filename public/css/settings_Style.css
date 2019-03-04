@@ -1,0 +1,40 @@
+#form-container
+{
+  padding: 30px 10px 50px 10px;
+}
+
+.form-control:hover
+{
+  border-color: #fa0140;
+}
+
+.form-control::selection
+{
+  border-color: #fa0140;
+}
+
+#btn-save
+{
+  color: #1a1a1a;
+  background-color: white;
+  border-color: #fa0140;
+}
+
+#btn-save:hover
+{
+  color: white;
+  background-color: #fa0140;
+}
+
+#btn-cancel
+{
+  color: white;
+  background-color: #fa0140;
+  border-color: #fa0140;
+}
+
+#btn-cancel:hover
+{
+  color: #1a1a1a;
+  background-color: white;
+}

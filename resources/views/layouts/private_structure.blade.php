@@ -15,7 +15,7 @@
         <h1>NAVBAR</h1>
         <ul>
           <img src="img/man.png" id="user-photo">
-          <p class="text-center">Nombre se usuario</p>
+          <p class="text-center">Nombre de usuario</p>
           <li><a href="/favoritos">FAVORITOS</a></li>
           <li><a href="/Mi cuenta">DATOS DE CUENTA</a></li>
           <li><a href="/parking">PARKING</a></li>
