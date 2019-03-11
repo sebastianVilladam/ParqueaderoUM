@@ -14,5 +14,10 @@ class Private_controller extends Controller
   {
     return view('private.acountSettings');
   }
+
+  public function vehicles()
+  {
+    return view('private.vehicles');
+  }
 }
 ?>

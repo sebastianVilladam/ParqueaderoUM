@@ -18,6 +18,7 @@
           <p class="text-center">Nombre de usuario</p>
           <li><a href="/favoritos">FAVORITOS</a></li>
           <li><a href="/Mi cuenta">DATOS DE CUENTA</a></li>
+          <li><a href="/Mis vehiculos">MIS VEHICULOS</a></li>
           <li><a href="/parking">PARKING</a></li>
           <li><a href="/login">CERRAR SESION</a></li>
         </ul>

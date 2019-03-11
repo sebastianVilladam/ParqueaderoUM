@@ -19,6 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//public side methods invocation
 Route::get('/', 'Public_Controller@home')->name('home');
 
 Route::get('/parking', 'Public_Controller@parking')->name('parking');
@@ -29,10 +30,14 @@ Route::get('/parqueadero', 'Public_Controller@parkingLot')->name('parkingLot');
 
 Route::get('/favoritos', 'Public_Controller@fav')->name('fav');
 
+//private side methods invocation
 Route::get('/fav', 'Private_controller@fav')->name('favP');
 
 Route::get('/Mi cuenta', 'Private_controller@settings')->name('acountSettings');
 
+Route::get('/Mis vehiculos', 'Private_controller@vehicles')->name('vehicles');
+
+//Employees side methods invocation
 Route::get('/seleccion', 'Employees_controller@selection')->name('selection');
 
 Route::get('/zonaLaboral', 'Employees_controller@place')->name('place');

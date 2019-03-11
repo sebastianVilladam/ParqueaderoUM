@@ -16,8 +16,7 @@
         <ul>
           <img src="img/man.png" id="user-photo">
           <p class="text-center">Nombre del empleado</p>
-          <li><a href="/seleccion">SELECCION DE ZONA</a></li>
-          <li><a href="/favoritos">BUSQUEDA DE PLACA</a></li>
+          <li><a href="/seleccion">SELECCION DE ZONA</a></li>          
           <li><a href="/parking">PARKING</a></li>
           <li><a href="/login">CERRAR SESION</a></li>
         </ul>
