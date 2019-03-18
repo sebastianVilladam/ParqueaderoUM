@@ -1,5 +1,6 @@
 @extends('layouts.admin_structure')
 @section('links')
+<link rel="stylesheet" href="/css/listSelection_Style.css">
 @stop
 @section('content')
 <h1>BIENVENIDO</h1>
