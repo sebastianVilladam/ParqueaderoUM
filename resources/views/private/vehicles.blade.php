@@ -20,5 +20,5 @@
   </div>
 </div>
 
-<button type="button" class="btn btn-primary mb-2" id="btn-add" onclick="location.href='/busqueda'">Añadir</button>
+<button type="button" class="btn btn-primary mb-2" id="btn-add" onclick="location.href='/Añadir vehiculo'">Añadir</button>
 @stop
