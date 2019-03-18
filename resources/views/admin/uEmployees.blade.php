@@ -4,26 +4,26 @@
 <link rel="stylesheet" href="/css/vehicles_Style.css">
 @stop
 @section('content')
-<h1>PARQUEADEROS</h1>
+<h1>VIGILANTES</h1>
 <hr>
 <button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='/administrar universidad'">Volver</button>
 
 <div class="container-fluid">
   <div class="list-group" id="vehicles-list">
-    <a class="list-group-item">Parqueadero edificio Fundadores
-      <button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='/datos de parqueadero'">Editar</button>
+    <a class="list-group-item">Vigilante 1
+      <button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='/datos del empleado'">Editar</button>
       <button type="button" class="btn btn-primary mb-2" id="btn-delete" onclick="#">Eliminar</button>
     </a>
-    <a class="list-group-item">Parqueadero Bavaria parte baja
-      <button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='/datos de parqueadero'">Editar</button>
+    <a class="list-group-item">vigilante 2
+      <button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='/datos del empleado'">Editar</button>
       <button type="button" class="btn btn-primary mb-2" id="btn-delete" onclick="#">Eliminar</button>
     </a>
-    <a class="list-group-item">Parqueadero Bavaria parte alta
-      <button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='/datos de parqueadero'">Editar</button>
+    <a class="list-group-item">vigilante3
+      <button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='/datos del empleado'">Editar</button>
       <button type="button" class="btn btn-primary mb-2" id="btn-delete" onclick="#">Eliminar</button>
     </a>
   </div>
 </div>
 
-<button type="button" class="btn btn-primary mb-2" id="btn-add" onclick="location.href='/nuevo parqueadero'">Añadir</button>
+<button type="button" class="btn btn-primary mb-2" id="btn-add" onclick="location.href='/nuevo vigilante'">Añadir</button>
 @stop

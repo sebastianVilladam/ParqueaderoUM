@@ -35,7 +35,7 @@
         <img class="card-imd-top" src="img/admin/user.png" >
         <div class="card-body">
           <h4 class="card-title">Vigilantes</h4>
-          <a href="/zonaLaboral" class="btn btn-outline-secondary" id="btn-card">Ingresar</a>
+          <a href="/vigilantes" class="btn btn-outline-secondary" id="btn-card">Ingresar</a>
         </div>
       </div>
     </div>

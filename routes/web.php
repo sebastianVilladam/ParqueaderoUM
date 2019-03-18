@@ -66,3 +66,9 @@ Route::get('/parqueaderos', 'Admin_controller@uLots')->name('uLots');
 Route::get('/datos de parqueadero', 'Admin_controller@lotSettings')->name('lotSettings');
 
 Route::get('/nuevo parqueadero', 'Admin_controller@lotAdd')->name('lotAdd');
+
+Route::get('/vigilantes', 'Admin_controller@uEmployees')->name('uEmployees');
+
+Route::get('/datos del empleado', 'Admin_controller@emSettings')->name('emSettings');
+
+Route::get('/nuevo vigilante', 'Admin_controller@emAdd')->name('emAdd');

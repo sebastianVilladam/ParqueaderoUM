@@ -1,4 +1,4 @@
-@extends('layouts.private_structure')
+@extends('layouts.admin_structure')
 @section('links')
 <link rel="stylesheet" href="/css/settings_Style.css">
 @stop

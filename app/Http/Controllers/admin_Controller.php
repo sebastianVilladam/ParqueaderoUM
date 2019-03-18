@@ -39,5 +39,20 @@ class Admin_controller extends Controller
   {
     return view('admin.lotAdd');
   }
+
+  public function uEmployees()
+  {
+    return view('admin.uEmployees');
+  }
+
+  public function emSettings()
+  {
+    return view('admin.emSettings');
+  }
+
+  public function emAdd()
+  {
+    return view('admin.emAdd');
+  }
 }
 ?>
