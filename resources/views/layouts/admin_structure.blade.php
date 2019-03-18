@@ -16,7 +16,7 @@
         <ul>
           <img src="img/man.png" id="user-photo">
           <p class="text-center">Nombre del administrador</p>
-          <li><a href="/seleccion">SELECCION DE TABLAS</a></li>
+          <li><a href="/listas">SELECCION DE TABLAS</a></li>
           <li><a href="/parking">DATOS DE CUENTA</a></li>
           <li><a href="/login">CERRAR SESION</a></li>
         </ul>
