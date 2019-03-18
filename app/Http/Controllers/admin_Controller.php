@@ -19,5 +19,10 @@ class Admin_controller extends Controller
   {
     return view('admin.adminUniversity');
   }
+
+  public function uSettings()
+  {
+    return view('admin.uSettings');
+  }
 }
 ?>

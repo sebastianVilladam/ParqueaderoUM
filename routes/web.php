@@ -58,3 +58,5 @@ Route::get('/listas', 'Admin_controller@listSelection')->name('listSelection');
 Route::get('/universidades', 'Admin_controller@uList')->name('uList');
 
 Route::get('/administrar universidad', 'Admin_controller@adminU')->name('adminU');
+
+Route::get('/datos de universidad', 'Admin_controller@uSettings')->name('uSettings');

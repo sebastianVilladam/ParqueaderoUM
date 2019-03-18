@@ -10,7 +10,7 @@
 <div class="container-fluid" id="buttons">
   <div class="row">
     <div class="col-sm-12 col-md-6 text-center">
-      <button type="button" class="btn btn-primary mb-2" id="btn-out" onclick="location.href='/vehiculos'">Editar universidad</button>
+      <button type="button" class="btn btn-primary mb-2" id="btn-out" onclick="location.href='/datos de universidad'">Editar universidad</button>
     </div>
     <div class="col-sm-12 col-md-6 text-center">
       <button type="button" class="btn btn-primary mb-2" id="btn-out" onclick="#">Eliminar universidad</button>
