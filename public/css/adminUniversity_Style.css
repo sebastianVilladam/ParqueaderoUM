@@ -1,0 +1,18 @@
+#buttons
+{
+  padding: 50px 0 50px 0;
+}
+
+#btn-out
+{
+  background-color: white;
+  color: #1a1a1a;
+  border-color: #fa0140;
+  font-size: 26px;
+}
+
+#btn-out:hover
+{
+  background-color: #fa0140;
+  color: white;
+}

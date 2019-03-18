@@ -14,5 +14,10 @@ class Admin_controller extends Controller
   {
     return view('admin.universitiesList');
   }
+
+  public function adminU()
+  {
+    return view('admin.adminUniversity');
+  }
 }
 ?>
