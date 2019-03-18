@@ -9,5 +9,10 @@ class Admin_controller extends Controller
   {
     return view('admin.listSelection');
   }
+
+  public function uList()
+  {
+    return view('admin.universitiesList');
+  }
 }
 ?>

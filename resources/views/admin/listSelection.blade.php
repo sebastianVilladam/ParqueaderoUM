@@ -13,7 +13,7 @@
         <img class="card-imd-top" src="img/admin/university.png" >
         <div class="card-body">
           <h4 class="card-title">Universidades</h4>
-          <a href="/zonaLaboral" class="btn btn-outline-secondary" id="btn-card">Ingresar</a>
+          <a href="/universidades" class="btn btn-outline-secondary" id="btn-card">Ingresar</a>
         </div>
       </div>
     </div>
