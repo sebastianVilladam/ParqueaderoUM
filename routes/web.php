@@ -33,6 +33,8 @@ Route::get('/favoritos', 'Public_Controller@fav')->name('fav');
 //private side methods invocation
 Route::get('/fav', 'Private_controller@fav')->name('favP');
 
+Route::get('/historial', 'Private_controller@history')->name('history');
+
 Route::get('/Mi cuenta', 'Private_controller@settings')->name('acountSettings');
 
 Route::get('/Mis vehiculos', 'Private_controller@vehicles')->name('vehicles');

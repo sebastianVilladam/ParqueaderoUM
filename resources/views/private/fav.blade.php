@@ -22,15 +22,7 @@
 <div class="container-fluid" id="img-container"></div>
 
   <!--statistics-->
-  <div class="container-fluid" id="graph-section">
-    <dl>
-      <dt>
-        TU HISTORIAL
-      </dt>
-      <dd class="percentage percentage-50"><span class="text">BIBLIOTECA(UAM): 50%</span></dd>
-      <dd class="percentage percentage-35"><span class="text">CUPULA(UAM): 35%</span></dd>
-      <dd class="percentage percentage-10"><span class="text">BAVARIA(UAM): 10%</span></dd>
-      <dd class="percentage percentage-5"><span class="text">FUNDADORES(UAM): 5%</span></dd>
-    </dl>
+  <div class="container-fluid text-center" id="graph-section">
+    <button type="button" class="btn btn-primary" id="btn-his" onclick="location.href='/historial'">Ver mi historial</button>
 </div>
 @stop
