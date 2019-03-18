@@ -19,5 +19,10 @@ class Private_controller extends Controller
   {
     return view('private.vehicles');
   }
+
+  public function vehicleEdit()
+  {
+    return view('private.vehicleEdit');
+  }
 }
 ?>

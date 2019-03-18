@@ -37,6 +37,8 @@ Route::get('/Mi cuenta', 'Private_controller@settings')->name('acountSettings');
 
 Route::get('/Mis vehiculos', 'Private_controller@vehicles')->name('vehicles');
 
+Route::get('/Vehiculo', 'Private_controller@vehicleEdit')->name('vehicleEdit');
+
 //Employees side methods invocation
 Route::get('/seleccion', 'Employees_controller@selection')->name('selection');
 

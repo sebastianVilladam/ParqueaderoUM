@@ -1,0 +1,44 @@
+#vehicles-list
+{
+  padding: 50px 200px 50px 200px;
+}
+
+#btn-edit
+{
+  background-color: white;
+  border-color: #fa0140;
+  color: #1a1a1a;
+}
+
+#btn-edit:hover
+{
+  background-color: #fa0140;
+  color: white;
+}
+
+#btn-delete
+{
+  background-color: #fa0140;
+  border-color: #fa0140;
+  color: white;
+}
+
+#btn-delete:hover
+{
+  background-color: white;
+  color: #1a1a1a;
+}
+
+#btn-add
+{
+  transform: translateX(300%);
+  background-color: white;
+  border-color: #fa0140;
+  color: #1a1a1a;
+}
+
+#btn-add:hover
+{
+  background-color: #fa0140;
+  color: white;
+}
