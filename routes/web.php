@@ -51,3 +51,6 @@ Route::get('/zonaLaboral', 'Employees_controller@place')->name('place');
 Route::get('/busqueda', 'Employees_controller@search')->name('search');
 
 Route::get('/vehiculos', 'Employees_controller@vehiclesIn')->name('vehiclesIn');
+
+//Admin side methods invocation
+Route::get('/listas', 'Admin_controller@listSelection')->name('listSelection');
