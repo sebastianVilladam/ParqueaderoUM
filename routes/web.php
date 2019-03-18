@@ -49,3 +49,5 @@ Route::get('/seleccion', 'Employees_controller@selection')->name('selection');
 Route::get('/zonaLaboral', 'Employees_controller@place')->name('place');
 
 Route::get('/busqueda', 'Employees_controller@search')->name('search');
+
+Route::get('/vehiculos', 'Employees_controller@vehiclesIn')->name('vehiclesIn');

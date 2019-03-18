@@ -19,5 +19,10 @@ class Employees_controller extends Controller
   {
     return view('employees.plateSearch');
   }
+
+  public function vehiclesIn()
+  {
+    return view('employees.vehiclesIn');
+  }
 }
 ?>

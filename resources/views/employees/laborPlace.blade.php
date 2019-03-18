@@ -8,17 +8,24 @@
 
 <!--search section-->
 <div class="container-fluid">
-  <form class="form-inline">
-    <div class="form-group mb-2">
-      <label for="staticEmail2" class="sr-only">Busqueda de informacion porplaca:</label>
-      <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Busqueda de placa:">
+  <div class="row padding">
+    <div class="col-sm-12 col-md-6">
+      <form class="form-inline">
+        <div class="form-group mb-2">
+          <label for="staticEmail2" class="sr-only">Busqueda de informacion porplaca:</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Busqueda de placa:">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="inputPassword2" class="sr-only">placa</label>
+          <input type="text" class="form-control" id="inputPassword2" placeholder="Placa del vehiculo">
+        </div>
+        <button type="button" class="btn btn-primary mb-2" id="btn-out" onclick="location.href='/busqueda'">Buscar</button>
+      </form>
     </div>
-    <div class="form-group mx-sm-3 mb-2">
-      <label for="inputPassword2" class="sr-only">placa</label>
-      <input type="text" class="form-control" id="inputPassword2" placeholder="Placa del vehiculo">
+    <div class="col-sm-12 col-md-6 text-center">
+      <button type="button" class="btn btn-primary mb-2" id="btn-out" onclick="location.href='/vehiculos'">Ver vehiculos actuales</button>
     </div>
-    <button type="button" class="btn btn-primary mb-2" id="btn-out" onclick="location.href='/busqueda'">Buscar</button>
-  </form>
+  </div>
 </div>
 
 <!--vehicle plate register section-->
