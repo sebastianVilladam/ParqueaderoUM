@@ -26,7 +26,7 @@
         <img class="card-imd-top" src="img/admin/parking.png" >
         <div class="card-body">
           <h4 class="card-title">Parqueaderos</h4>
-          <a href="/universidades" class="btn btn-outline-secondary" id="btn-card">Ingresar</a>
+          <a href="/parqueaderos" class="btn btn-outline-secondary" id="btn-card">Ingresar</a>
         </div>
       </div>
     </div>

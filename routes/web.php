@@ -60,3 +60,9 @@ Route::get('/universidades', 'Admin_controller@uList')->name('uList');
 Route::get('/administrar universidad', 'Admin_controller@adminU')->name('adminU');
 
 Route::get('/datos de universidad', 'Admin_controller@uSettings')->name('uSettings');
+
+Route::get('/parqueaderos', 'Admin_controller@uLots')->name('uLots');
+
+Route::get('/datos de parqueadero', 'Admin_controller@lotSettings')->name('lotSettings');
+
+Route::get('/nuevo parqueadero', 'Admin_controller@lotAdd')->name('lotAdd');
