@@ -1,6 +1,6 @@
 #head
 {
-  background-color: #2a2a2a;I
+  background-color: #363636;I
 }
 
 .img-head
@@ -14,60 +14,57 @@
 {
   font-weight: 900;
   font-size: 40px;
-  color: #fa0140;
+  color: white;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 8%;
 }
 
 #head h3
 {
-  color: white;
+  color: #474747;
   position: absolute;
   top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 8%;
 }
 
 #head h4
 {
-  color: white;
+  color: #474747;
   position: absolute;
   top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 8%;
 }
 
 #btn-head
 {
   position: absolute;
   top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: black;
-  opacity: .5;
-  color: #fa0140;
-  border-color: #fa0140;
+  left: 8%;
+  background: #e8175d;
+  color: #a8a7a8;
+  border-color: #e8175d;
+  border-radius: 0px;
+  border-width: 3px;
+  transition: 0.5s;
 }
 
 #btn-head:hover
 {
-  background: #fa0140;
-  opacity: 1;
-  color: white;
+  background: rgba(0,0,0,0);
+  color: #a8a7a8;
 }
 
 #cards-section
 {
-  background-color: #1a1a1a;
+  background-color: #363636;
   padding: 50px 0px 50px 0px;
 }
 
 .card
 {
-    background-color: #2a2a2a;
-    color: white;
+    background-color: #363636;
+    color: #a8a7a8;
 }
 
 .col-md-4
@@ -77,18 +74,21 @@
 
 .card-title
 {
-  color: #fa0140;
+  color: #cc527a;
 }
 
 #btn-card
 {
-  background: #2a2a2a;
-  color: #fa0140;
-  border-color: #fa0140;
+  background: #363636;
+  color: #474747;
+  border-color: #e8175d;
+  border-radius: 0px;
+  border-width: 3px;
+  transition: 0.5s;
 }
 
 #btn-card:hover
 {
-  background: #fa0140;
-  color: white;
+  background: #e8175d;
+  color: #a8a7a8;
 }

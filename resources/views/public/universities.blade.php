@@ -7,7 +7,7 @@
 <div class="container-fluid" id="head">
   <img src="img/head_universities.jpg" class="img-head">
   <h1>¿Buscando un lugar para aparcar?</h1>
-  <h3>Encuantra uno aqui!! Facil y rapido</h3>
+  <h3>Encuentra uno aqui!! Facil y rapido</h3>
   <h4>Registrate y obten mejor informacion de tus lugares favoritos</h4>
   <button type="button" class="btn btn-outline btn-lg" id="btn-head" onclick="location.href='/register'">
     Registrarse</button>
