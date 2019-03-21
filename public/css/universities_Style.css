@@ -1,6 +1,6 @@
 #head
 {
-  background-color: #363636;I
+  background-color: #1a1a1a;I
 }
 
 .img-head
@@ -22,7 +22,7 @@
 
 #head h3
 {
-  color: #474747;
+  color: #a8a7a8;
   position: absolute;
   top: 60%;
   left: 8%;
@@ -30,7 +30,7 @@
 
 #head h4
 {
-  color: #474747;
+  color: #a8a7a8;
   position: absolute;
   top: 70%;
   left: 8%;
@@ -41,9 +41,9 @@
   position: absolute;
   top: 80%;
   left: 8%;
-  background: #e8175d;
-  color: #a8a7a8;
-  border-color: #e8175d;
+  background: #fa0140;
+  color: white;
+  border-color: #fa0140;
   border-radius: 0px;
   border-width: 3px;
   transition: 0.5s;
@@ -52,18 +52,18 @@
 #btn-head:hover
 {
   background: rgba(0,0,0,0);
-  color: #a8a7a8;
+  color: white;
 }
 
 #cards-section
 {
-  background-color: #363636;
+  background-color: #1a1a1a;
   padding: 50px 0px 50px 0px;
 }
 
 .card
 {
-    background-color: #363636;
+    background-color: #1a1a1a;
     color: #a8a7a8;
 }
 
@@ -74,14 +74,14 @@
 
 .card-title
 {
-  color: #cc527a;
+  color: white;
 }
 
 #btn-card
 {
-  background: #363636;
-  color: #474747;
-  border-color: #e8175d;
+  background: #1a1a1a;
+  color: #a8a7a8;
+  border-color: #fa0140;
   border-radius: 0px;
   border-width: 3px;
   transition: 0.5s;
@@ -89,6 +89,6 @@
 
 #btn-card:hover
 {
-  background: #e8175d;
-  color: #a8a7a8;
+  background: #fa0140;
+  color: white;
 }

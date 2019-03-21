@@ -19,16 +19,17 @@
 
 #btCarousel
 {
-  background: black;
-  opacity: .5;
-  color: #fa0140;
+  background: #fa0140;
+  color: white;
   border-color: #fa0140;
+  transition: 0.5s;
+  border-radius: 0px;
+  border-width: 3px;
 }
 
 #btCarousel:hover
 {
-  background: #fa0140;
-  opacity: 1;
+  background: rgba(0, 0, 0, 0);
   color: white;
 }
 
@@ -36,7 +37,7 @@
 {
   padding: 50px 10px 50px 10px;
   color: white;
-  background-color: #2e2e2e;
+  background-color: #363636;
 }
 
 #tools
