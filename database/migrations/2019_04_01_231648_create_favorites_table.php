@@ -14,12 +14,12 @@ class CreateFavoritesTable extends Migration
     public function up()
     {
         Schema::create('favorites', function (Blueprint $table) {
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('parkingLot_id');
-            $table->timestamps();
+          $table->unsignedBigInteger('user_id');
+          $table->unsignedBigInteger('parkingLot_id');
+          $table->timestamps();
 
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
-            //$table->foreign('parkingLot_id')->references('id')->on('parking_lots')->onDelete('restrict')->onUpdate('cascade');
+          $table->foreign('user_id')->references('id')->on('users')->onDelete('restrict')->onUpdate('cascade');
+          $table->foreign('parkingLot_id')->references('id')->on('parking_lots')->onDelete('restrict')->onUpdate('cascade');
         });
     }
 
