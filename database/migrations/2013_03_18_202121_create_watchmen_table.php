@@ -16,8 +16,6 @@ class CreateWatchmenTable extends Migration
         Schema::create('watchmen', function (Blueprint $table) {
             $table->BigIncrements('id');
             $table->unsignedBigInteger('university_id');
-            $table->string('name');
-            $table->string('phone_number');
             $table->string('company');
             $table->timestamps();
 

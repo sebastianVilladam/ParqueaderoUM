@@ -12,4 +12,9 @@ class Watchman extends Model
     {
       return $this->belongsTo('App/University');
     }
+
+    public function user()
+    {
+      return $this->hasMany('App/User');
+    }
 }
