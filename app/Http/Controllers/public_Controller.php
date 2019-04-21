@@ -24,10 +24,5 @@ class Public_Controller extends Controller
   {
     return view('public.parkingLot');
   }
-
-  public function fav()
-  {
-    return view('private.fav');
-  }
 }
 ?>

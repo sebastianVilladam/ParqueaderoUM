@@ -7,6 +7,10 @@ class Private_controller extends Controller
 {
   public function fav()
   {
+    return view('private.fav');
+  }
+  public function favP()
+  {
     return view('private.fav_ParkingLot');
   }
 

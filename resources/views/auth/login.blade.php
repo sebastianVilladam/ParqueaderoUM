@@ -13,7 +13,7 @@
 
                 <div class="card-body">
                   <!--action="{{ route('login') }}" vvv-->
-                    <form method="POST">
+                    <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
@@ -59,7 +59,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                               <!--change button type to submit whe database is ready,by now i'll be button type-->
-                                <button type="button" class="btn btn-primary" id="btn-login" onclick="location.href='/favoritos'">
+                                <button type="submit" class="btn btn-primary" id="btn-login">
                                     {{ __('Login') }}
                                 </button>
 

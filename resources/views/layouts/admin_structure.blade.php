@@ -15,10 +15,15 @@
         <h1>NAVBAR</h1>
         <ul>
           <img src="img/man.png" id="user-photo">
-          <p class="text-center">Nombre del administrador</p>
+          <p class="text-center">{{ Auth::user()->name }}</p>
           <li><a href="/listas">SELECCION DE TABLAS</a></li>
           <li><a href="/parking">DATOS DE CUENTA</a></li>
-          <li><a href="/login">CERRAR SESION</a></li>
+          <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+               document.getElementById('logout-form').submit();">CERRAR SESION</a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                  @csrf
+              </form>
+          </li>
         </ul>
       </nav>
 

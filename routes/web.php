@@ -28,47 +28,60 @@ Route::get('/universidad', 'Public_Controller@parkingU')->name('parkingU');
 
 Route::get('/parqueadero', 'Public_Controller@parkingLot')->name('parkingLot');
 
-Route::get('/favoritos', 'Public_Controller@fav')->name('fav');
-
 //private side methods invocation
-Route::get('/fav', 'Private_controller@fav')->name('favP');
+Route::group(['middleware' => 'standarUser'], function()
+{
+  Route::get('/favoritos', 'Private_Controller@fav')->name('fav');
 
-Route::get('/historial', 'Private_controller@history')->name('history');
+  Route::get('/fav', 'Private_controller@favP')->name('favP');
 
-Route::get('/Mi cuenta', 'Private_controller@settings')->name('acountSettings');
+  Route::get('/historial', 'Private_controller@history')->name('history');
 
-Route::get('/Mis vehiculos', 'Private_controller@vehicles')->name('vehicles');
+  Route::get('/Mi cuenta', 'Private_controller@settings')->name('acountSettings');
 
-Route::get('/Vehiculo', 'Private_controller@vehicleEdit')->name('vehicleEdit');
+  Route::get('/Mis vehiculos', 'Private_controller@vehicles')->name('vehicles');
 
-Route::get('/Añadir vehiculo', 'Private_controller@vehicleAdd')->name('vehicleAdd');
+  Route::get('/Vehiculo', 'Private_controller@vehicleEdit')->name('vehicleEdit');
+
+  Route::get('/Añadir vehiculo', 'Private_controller@vehicleAdd')->name('vehicleAdd');
+});
 
 //Employees side methods invocation
-Route::get('/seleccion', 'Employees_controller@selection')->name('selection');
+Route::group(['middleware' => 'watchmanUser'], function()
+{
+  Route::get('/seleccion', 'Employees_controller@selection')->name('selection');
 
-Route::get('/zonaLaboral', 'Employees_controller@place')->name('place');
+  Route::get('/zonaLaboral', 'Employees_controller@place')->name('place');
 
-Route::get('/busqueda', 'Employees_controller@search')->name('search');
+  Route::get('/busqueda', 'Employees_controller@search')->name('search');
 
-Route::get('/vehiculos', 'Employees_controller@vehiclesIn')->name('vehiclesIn');
+  Route::get('/vehiculos', 'Employees_controller@vehiclesIn')->name('vehiclesIn');
+});
 
 //Admin side methods invocation
-Route::get('/listas', 'Admin_controller@listSelection')->name('listSelection');
+Route::group(['middleware' => 'adminUser'], function()
+{
+  Route::get('/listas', 'Admin_controller@listSelection')->name('listSelection');
 
-Route::get('/universidades', 'Admin_controller@uList')->name('uList');
+  Route::get('/universidades', 'Admin_controller@uList')->name('uList');
 
-Route::get('/administrar universidad', 'Admin_controller@adminU')->name('adminU');
+  Route::get('/administrar universidad', 'Admin_controller@adminU')->name('adminU');
 
-Route::get('/datos de universidad', 'Admin_controller@uSettings')->name('uSettings');
+  Route::get('/datos de universidad', 'Admin_controller@uSettings')->name('uSettings');
 
-Route::get('/parqueaderos', 'Admin_controller@uLots')->name('uLots');
+  Route::get('/parqueaderos', 'Admin_controller@uLots')->name('uLots');
 
-Route::get('/datos de parqueadero', 'Admin_controller@lotSettings')->name('lotSettings');
+  Route::get('/datos de parqueadero', 'Admin_controller@lotSettings')->name('lotSettings');
 
-Route::get('/nuevo parqueadero', 'Admin_controller@lotAdd')->name('lotAdd');
+  Route::get('/nuevo parqueadero', 'Admin_controller@lotAdd')->name('lotAdd');
 
-Route::get('/vigilantes', 'Admin_controller@uEmployees')->name('uEmployees');
+  Route::get('/vigilantes', 'Admin_controller@uEmployees')->name('uEmployees');
 
-Route::get('/datos del empleado', 'Admin_controller@emSettings')->name('emSettings');
+  Route::get('/datos del empleado', 'Admin_controller@emSettings')->name('emSettings');
 
-Route::get('/nuevo vigilante', 'Admin_controller@emAdd')->name('emAdd');
+  Route::get('/nuevo vigilante', 'Admin_controller@emAdd')->name('emAdd');
+});
+
+Route::get('/error', ['as' => 'public.errorWindow', function() {
+    return view('public.errorWindow');
+}]);
