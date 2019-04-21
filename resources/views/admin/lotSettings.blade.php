@@ -6,31 +6,26 @@
 <h1>DATOS DEL PARQUEADERO</h1>
 <hr>
 <div class="container-fluid center" id="form-container">
-  <form>
+  {!! Form::model($data, ['method' => 'PUT','route' => ['lotSettings', $data->id]]) !!}
   <div class="form-group">
-    <label for="formGroupExampleInput">NOMBRE DEL PARQUEADERO:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Parqueadero edificio Fundadores">
+    {!! Form::label('name', 'NOMBRE DEL PARQUEADERO:', ['class' => 'control-label']) !!}
+    {!! Form::text('name', null, ['class' => 'form-control' , 'placeholder' => '$data->name']) !!}
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">CAPACIDAD:</label>
-    <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="25">
+    {!! Form::label('adress', 'DIRECCION:', ['class' => 'control-label']) !!}
+    {!! Form::text('adress', null, ['class' => 'form-control' , 'placeholder' => '$data->adress']) !!}
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">TELEFONO:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="555-555-555">
+    {!! Form::label('phone_number', 'TELEFONO:', ['class' => 'control-label']) !!}
+    {!! Form::text('phone_number', null, ['class' => 'form-control' , 'placeholder' => '$data->phone_number']) !!}
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">UBICACION:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="call 12 # 34 56">
-  </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput">UNIVERSIDAD:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Universidad Autonoma de Manizales">
+    {!! Form::label('capacity', 'CAPACIDAD:', ['class' => 'control-label']) !!}
+    {!! Form::text('capacity', null, ['class' => 'form-control' , 'placeholder' => '$data->capacity']) !!}
   </div>
   <div class="text-center">
-    <button type="button" class="btn btn-primary" id="btn-save" onclick="location.href='/parqueaderos'">Guardar cambios</button>
-    <button type="button" class="btn btn-primary" id="btn-cancel" onclick="location.href='/parqueaderos'">Cancelar</button>
+    <button type="submit" class="btn btn-primary" id="btn-save">Guardar cambios</button>
+    <button type="button" class="btn btn-primary" id="btn-cancel" onclick="location.href='{{route('uLots', $data->university_id)}}'">Cancelar</button>
   </div>
-</form>
 </div>
 @stop

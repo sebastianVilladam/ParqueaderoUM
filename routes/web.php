@@ -63,7 +63,6 @@ Route::group(['middleware' => 'adminUser'], function()
 {
   Route::get('/listas', 'Admin_controller@listSelection')->name('listSelection');
 
-  //Route::get('/universidades', 'Admin_controller@uList')->name('uList');
   Route::get('/universidades', 'UniversityController@index')->name('uList');
 
   Route::get('/nueva universidad', 'UniversityController@create')->name('uniAdd');
@@ -78,12 +77,20 @@ Route::group(['middleware' => 'adminUser'], function()
 
   Route::delete('/universidad/{id}', 'UniversityController@destroy')->name('uDelete');
 
-  Route::get('/parqueaderos', 'Admin_controller@uLots')->name('uLots');
+//------------------------------------------------------------------------------
+  Route::get('/parqueaderos/{u_id}', 'ParkingLotController@index')->name('uLots');
 
-  Route::get('/datos de parqueadero', 'Admin_controller@lotSettings')->name('lotSettings');
+  Route::get('{u_id}/nuevo parqueadero', 'ParkingLotController@create')->name('lotAddForm');
 
-  Route::get('/nuevo parqueadero', 'Admin_controller@lotAdd')->name('lotAdd');
+  Route::post('/nuevo parqueadero', 'ParkingLotController@store')->name('lotAdd');
 
+  Route::get('/datos de parqueadero/{id}', 'ParkingLotController@edit')->name('lotSettings');
+
+  Route::put('/datos de parqueadero/{id}', 'ParkingLotController@update')->name('lotSettings');
+
+  Route::delete('/parqueadero/{id}', 'ParkingLotController@destroy')->name('parkDelete');
+
+//------------------------------------------------------------------------------
   Route::get('/vigilantes', 'Admin_controller@uEmployees')->name('uEmployees');
 
   Route::get('/datos del empleado', 'Admin_controller@emSettings')->name('emSettings');
