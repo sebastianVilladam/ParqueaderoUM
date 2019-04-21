@@ -63,11 +63,20 @@ Route::group(['middleware' => 'adminUser'], function()
 {
   Route::get('/listas', 'Admin_controller@listSelection')->name('listSelection');
 
-  Route::get('/universidades', 'Admin_controller@uList')->name('uList');
+  //Route::get('/universidades', 'Admin_controller@uList')->name('uList');
+  Route::get('/universidades', 'UniversityController@index')->name('uList');
 
-  Route::get('/administrar universidad', 'Admin_controller@adminU')->name('adminU');
+  Route::get('/nueva universidad', 'UniversityController@create')->name('uniAdd');
 
-  Route::get('/datos de universidad', 'Admin_controller@uSettings')->name('uSettings');
+  Route::post('/nueva universidad', 'UniversityController@store')->name('uniAdd');
+
+  Route::get('/administrar universidad/{id}', 'UniversityController@show')->name('adminU');
+
+  Route::get('/datos de universidad/{id}', 'UniversityController@edit')->name('uSettings');
+
+  Route::put('/datos de universidad/{id}', 'UniversityController@update')->name('uSettings');
+
+  Route::delete('/universidad/{id}', 'UniversityController@destroy')->name('uDelete');
 
   Route::get('/parqueaderos', 'Admin_controller@uLots')->name('uLots');
 

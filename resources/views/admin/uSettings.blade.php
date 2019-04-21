@@ -6,27 +6,23 @@
 <h1>DATOS DE UNIVERSIDAD</h1>
 <hr>
 <div class="container-fluid center" id="form-container">
-  <form>
+  {!! Form::model($data, ['method' => 'PUT','route' => ['uSettings', $data->id]]) !!}
   <div class="form-group">
-    <label for="formGroupExampleInput">NOMBRE DE LA UNIVERSIDAD:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Universidad Autonoma de Manizales">
+    {!! Form::label('name', 'NOMBRE DE LA UNIVERSIDAD:', ['class' => 'control-label']) !!}
+    {!! Form::text('name', null, ['class' => 'form-control', 'placeholder' => '$data->name']) !!}
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">CORREO ELECTRONICO:</label>
-    <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="universidadM@gmail.com">
+    {!! Form::label('email', 'CORREO ELECTRONICO:', ['class' => 'control-label']) !!}
+    {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => '$data->email']) !!}
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">TELEFONO:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="555-555-555">
-  </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput">UBICACION:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="call 12 # 34 56">
+    {!! Form::label('phone_number', 'TELEFONO:', ['class' => 'control-label']) !!}
+    {!! Form::text('phone_number', null, ['class' => 'form-control', 'placeholder' => '$data->phone_number']) !!}
   </div>
   <div class="text-center">
-    <button type="button" class="btn btn-primary" id="btn-save" onclick="location.href='/administrar universidad'">Guardar cambios</button>
-    <button type="button" class="btn btn-primary" id="btn-cancel" onclick="location.href='/administrar universidad'">Cancelar</button>
+    <button type="submit" class="btn btn-primary" id="btn-save">Guardar cambios</button>
+    <button type="button" class="btn btn-primary" id="btn-cancel" onclick="location.href='{{route('adminU', $data->id)}}'">Cancelar</button>
   </div>
-</form>
+  {!! Form::close() !!}
 </div>
 @stop

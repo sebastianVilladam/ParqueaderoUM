@@ -8,10 +8,10 @@
 
 <div class="container-fluid padding center" id="table">
   <div class="list-group">
-    <a href="/administrar universidad" class="list-group-item list-group-item-action">Universidad Autonoma de Manizales</a>
-    <a href="/administrar universidad" class="list-group-item list-group-item-action">Universidad de Manizales</a>
-    <a href="/administrar universidad" class="list-group-item list-group-item-action">Universidad Nacional</a>
-    <a href="/administrar universidad" class="list-group-item list-group-item-action">Universidad de Caldas</a>
+    @foreach($list as $university)
+      <a href="{{route('adminU', $university->id)}}" class="list-group-item list-group-item-action">{{ $university->name}}</a>
+    @endforeach
   </div>
+  <button type="button" class="btn btn-primary mb-2" id="btn-add" onclick="location.href='/nueva universidad'">Añadir</button>
 </div>
 @stop
