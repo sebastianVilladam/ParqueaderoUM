@@ -91,11 +91,17 @@ Route::group(['middleware' => 'adminUser'], function()
   Route::delete('/parqueadero/{id}', 'ParkingLotController@destroy')->name('parkDelete');
 
 //------------------------------------------------------------------------------
-  Route::get('/vigilantes', 'Admin_controller@uEmployees')->name('uEmployees');
+  Route::get('/vigilantes/{id}', 'WatchmanController@index')->name('uEmployees');
 
-  Route::get('/datos del empleado', 'Admin_controller@emSettings')->name('emSettings');
+  Route::get('/nuevo vigilante/{id}', 'WatchmanController@create')->name('emAddForm');
 
-  Route::get('/nuevo vigilante', 'Admin_controller@emAdd')->name('emAdd');
+  Route::post('/nuevo vigilante', 'WatchmanController@store')->name('emAdd');
+
+  Route::get('/datos del empleado/{id}', 'WatchmanController@edit')->name('emSettings');
+
+  Route::put('/datos del empleado/{id}', 'WatchmanController@update')->name('emSettings');
+
+  Route::delete('/empleado/{id}', 'WatchmanController@destroy')->name('emDelete');
 });
 
 Route::get('/error', ['as' => 'public.errorWindow', function() {

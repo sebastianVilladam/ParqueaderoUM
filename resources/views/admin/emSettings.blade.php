@@ -6,23 +6,22 @@
 <h1>DATOS DEL EMPLEADO</h1>
 <hr>
 <div class="container-fluid center" id="form-container">
-  <form>
+  {!! Form::model($data, ['method' => 'PUT','route' => ['emSettings', $data->id]]) !!}
   <div class="form-group">
-    <label for="formGroupExampleInput">NOMBRE DEL EMPLEADO:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Empleado 1">
+    {!! Form::label('name', 'NOMBRE DEL VIGILANTE:', ['class' => 'control-label']) !!}
+    {!! Form::text('name', null, ['class' => 'form-control' , 'placeholder' => '$data->name']) !!}
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">TELEFONO:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="555-555-555">
+    {!! Form::label('email', 'EMAIL:', ['class' => 'control-label']) !!}
+    {!! Form::text('email', null, ['class' => 'form-control' , 'placeholder' => '$data->email']) !!}
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">EMPRESA:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Seguridad S.A.S">
+    {!! Form::label('company', 'COMPAÑIA:', ['class' => 'control-label']) !!}
+    {!! Form::text('company', null, ['class' => 'form-control' , 'placeholder' => '$data->company']) !!}
   </div>
   <div class="text-center">
-    <button type="button" class="btn btn-primary" id="btn-save" onclick="location.href='/vigilantes'">Guardar cambios</button>
-    <button type="button" class="btn btn-primary" id="btn-cancel" onclick="location.href='/vigilantes'">Cancelar</button>
+    <button type="submit" class="btn btn-primary" id="btn-save">Guardar cambios</button>
+    <button type="button" class="btn btn-primary" id="btn-cancel" onclick="location.href='{{route('uEmployees', $data->uni_id)}}'">Cancelar</button>
   </div>
-</form>
 </div>
 @stop

@@ -10,7 +10,7 @@ class University extends Model
 
     public function employees()
     {
-      return $this->hasMany('App/Watchman');
+      return $this->hasMany('App/User');
     }
 
     public function lots()

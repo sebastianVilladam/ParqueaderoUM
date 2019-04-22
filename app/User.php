@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'info_id',
+        'name', 'email', 'password', 'role_id', 'uni_id', 'company',
     ];
 
     /**
@@ -38,9 +38,14 @@ class User extends Authenticatable
       return $this->hasMany('App/Favorite');
     }
 
-    public function estraInfo()
+    /*public function estraInfo()
     {
       return $this->hasOne('App/Watchman');
+    }*/
+
+    public function university()
+    {
+      return $this->belongsTo('App/University');
     }
 
     public function role()
