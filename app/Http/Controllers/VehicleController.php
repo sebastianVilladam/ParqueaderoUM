@@ -16,7 +16,12 @@ class VehicleController extends Controller
     public function index($id)
     {
       $vehicles = vehicle::where('user_id', $id)->get();
-      return view('admin.userVehicles', ['list' => $vehicles])->with('u_id', $id);
+
+      $actual_user = \Auth::user();
+      if($actual_user->role_id == 1)
+        return view('private.vehicles', ['list' => $vehicles])->with('u_id', $id);
+      if($actual_user->role_id == 3)
+        return view('admin.userVehicles', ['list' => $vehicles])->with('u_id', $id);
     }
 
     /**
@@ -26,7 +31,11 @@ class VehicleController extends Controller
      */
     public function create($u_id)
     {
-        return view('admin.vehicleAdd')->with('u_id',$u_id);
+        $actual_user = \Auth::user();
+        if($actual_user->role_id == 1)
+          return view('private.vehicleAdd')->with('u_id',$u_id);
+        if($actual_user->role_id == 3)
+          return view('admin.vehicleAdd')->with('u_id',$u_id);
     }
 
     /**
@@ -41,7 +50,12 @@ class VehicleController extends Controller
       Vehicle::create($input);
       $id =  $input['user_id'];
       $vehicles = Vehicle::where('user_id', $id)->get();
-      return view('admin.userVehicles', ['list' => $vehicles])->with('u_id', $id);
+
+      $actual_user = \Auth::user();
+      if($actual_user->role_id == 1)
+        return view('private.vehicles', ['list' => $vehicles])->with('u_id', $id);
+      if($actual_user->role_id == 3)
+        return view('admin.userVehicles', ['list' => $vehicles])->with('u_id', $id);
     }
 
     /**
@@ -64,7 +78,12 @@ class VehicleController extends Controller
     public function edit($id)
     {
       $vehicle = Vehicle::findOrFail($id);
-      return view('admin.vehicleSettings', ['data' => $vehicle]);
+
+      $actual_user = \Auth::user();
+      if($actual_user->role_id == 1)
+        return view('private.vehicleEdit', ['data' => $vehicle]);
+      if($actual_user->role_id == 3)
+        return view('admin.vehicleSettings', ['data' => $vehicle]);
     }
 
     /**
@@ -81,7 +100,12 @@ class VehicleController extends Controller
       $vehicle->fill($input)->save();
       $id =  $vehicle['user_id'];
       $vehicles = Vehicle::where('user_id', $id)->get();
-      return view('admin.userVehicles', ['list' => $vehicles])->with('u_id', $id);
+
+      $actual_user = \Auth::user();
+      if($actual_user->role_id == 1)
+        return view('private.vehicles', ['list' => $vehicles])->with('u_id', $id);
+      if($actual_user->role_id == 3)
+        return view('admin.userVehicles', ['list' => $vehicles])->with('u_id', $id);
     }
 
     /**
@@ -96,6 +120,11 @@ class VehicleController extends Controller
       $u_id = $vehicle['user_id'];
       $vehicle->delete();
       $vehicles = Vehicle::where('user_id', $u_id)->get();
-      return view('admin.userVehicles', ['list' => $vehicles])->with('u_id', $u_id);
+
+      $actual_user = \Auth::user();
+      if($actual_user->role_id == 1)
+        return view('private.vehicles', ['list' => $vehicles])->with('u_id', $id);
+      if($actual_user->role_id == 3)
+        return view('admin.userVehicles', ['list' => $vehicles])->with('u_id', $u_id);
     }
 }

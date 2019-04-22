@@ -37,13 +37,26 @@ Route::group(['middleware' => 'standarUser'], function()
 
   Route::get('/historial', 'Private_controller@history')->name('history');
 
-  Route::get('/Mi cuenta', 'Private_controller@settings')->name('acountSettings');
+  Route::get('/mi cuenta/{id}', 'UserController@edit')->name('acountSettings');
 
-  Route::get('/Mis vehiculos', 'Private_controller@vehicles')->name('vehicles');
+  Route::put('/mi cuenta/{id}', 'UserController@update')->name('acountSettings');
+
+  /*Route::get('/Mis vehiculos', 'Private_controller@vehicles')->name('vehicles');
 
   Route::get('/Vehiculo', 'Private_controller@vehicleEdit')->name('vehicleEdit');
 
-  Route::get('/Añadir vehiculo', 'Private_controller@vehicleAdd')->name('vehicleAdd');
+  Route::get('/Añadir vehiculo', 'Private_controller@vehicleAdd')->name('vehicleAdd');*/
+  Route::get('/mis vehiculos/{id}', 'VehicleController@index')->name('vehicles');
+
+  Route::get('{u_id}/registrar vehiculo', 'VehicleController@create')->name('veAddForm');
+
+  Route::post('/registrar vehiculo', 'VehicleController@store')->name('veAdd');
+
+  Route::get('/datos de mi vehiculo/{id}', 'VehicleController@edit')->name('veSettings');
+
+  Route::put('/datos de mi vehiculo/{id}', 'VehicleController@update')->name('veSettings');
+
+  Route::delete('/mi vehiculo/{id}', 'VehicleController@destroy')->name('veDelete');
 });
 
 //Employees side methods invocation

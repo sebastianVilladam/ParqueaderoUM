@@ -6,19 +6,18 @@
 @section('content')
 <h1>MIS VEHICULOS</h1>
 <hr>
+<button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='{{route('fav')}}'">Volver</button>
 
 <div class="container-fluid">
   <div class="list-group" id="vehicles-list">
-    <a class="list-group-item">GHB753 Kia Picanto Blanco
-      <button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='/Vehiculo'">Editar</button>
-      <button type="button" class="btn btn-primary mb-2" id="btn-delete" onclick="#">Eliminar</button>
-    </a>
-    <a class="list-group-item">JMN411 Ford Fiesta Negro
-      <button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='/Vehiculo'">Editar</button>
-      <button type="button" class="btn btn-primary mb-2" id="btn-delete" onclick="#">Eliminar</button>
-    </a>
+    @foreach($list as $vehicle)
+      <a class="list-group-item">{{ $vehicle->plate }}
+        <button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='{{ route('veSettings', $vehicle->id)}}'">Editar</button>
+        {!! Form::open(['method' => 'DELETE','route' => ['veDelete', $vehicle->id]]) !!}
+          {!! Form::submit('Eliminar', ['class' => 'btn btn-primary mb-2', 'id' => 'btn-delete']) !!}
+        {!! Form::close() !!}
+      </a>
+    @endforeach
   </div>
-</div>
-
-<button type="button" class="btn btn-primary mb-2" id="btn-add" onclick="location.href='/Añadir vehiculo'">Añadir</button>
+<button type="button" class="btn btn-primary mb-2" id="btn-add" onclick="location.href='{{route('veAddForm', $u_id)}}'">Añadir</button>
 @stop

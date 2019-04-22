@@ -6,31 +6,26 @@
 <h1>DATOS DE MI VEHICULO</h1>
 <hr>
 <div class="container-fluid center" id="form-container">
-  <form>
+  {!! Form::model($data, ['method' => 'PUT','route' => ['veSettings', $data->id]]) !!}
   <div class="form-group">
-    <label for="formGroupExampleInput">PLACA DEL VEHICULO:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="HHW646">
+    {!! Form::label('plate', 'PLACA:', ['class' => 'control-label']) !!}
+    {!! Form::text('plate', null, ['class' => 'form-control' , 'placeholder' => '$data->plate']) !!}
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">MARCA:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Pikanto">
+    {!! Form::label('brand', 'MARCA:', ['class' => 'control-label']) !!}
+    {!! Form::text('brand', null, ['class' => 'form-control' , 'placeholder' => '$data->brand']) !!}
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">LINEA:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Picanto">
+    {!! Form::label('line', 'LINEA:', ['class' => 'control-label']) !!}
+    {!! Form::text('line', null, ['class' => 'form-control' , 'placeholder' => '$data->line']) !!}
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">COLOR:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Blanco">
-  </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput">TIPO DE VEHICULO:</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Carro">
+    {!! Form::label('color', 'COLOR:', ['class' => 'control-label']) !!}
+    {!! Form::text('color', null, ['class' => 'form-control' , 'placeholder' => '$data->color']) !!}
   </div>
   <div class="text-center">
-    <button type="button" class="btn btn-primary" id="btn-save" onclick="#">Guardar cambios</button>
-    <button type="button" class="btn btn-primary" id="btn-cancel" onclick="location.href='/Mis vehiculos'">Cancelar</button>
+    <button type="submit" class="btn btn-primary" id="btn-save">Guardar cambios</button>
+    <button type="button" class="btn btn-primary" id="btn-cancel" onclick="location.href='{{route('vehicles', $data->user_id)}}'">Cancelar</button>
   </div>
-</form>
 </div>
 @stop

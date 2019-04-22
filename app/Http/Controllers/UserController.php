@@ -65,7 +65,11 @@ class UserController extends Controller
     public function edit($id)
     {
       $user = User::findOrFail($id);
-      return view('admin.userSettings', ['data' => $user]);
+      $actual_user = \Auth::user();
+      if($actual_user->role_id == 1)
+        return view('private.acountSettings', ['data' => $user]);
+      if($actual_user->role_id == 3)
+        return view('admin.userSettings', ['data' => $user]);
     }
 
     /**
@@ -81,7 +85,11 @@ class UserController extends Controller
       $input = $request->all();
       $user->fill($input)->save();
       $users = User::where('role_id', 1)->get();
-      return view('admin.usersList', ['list' => $users]);
+      $actual_user = \Auth::user();
+      if($actual_user->role_id == 1)
+        return view('private.acountSettings', ['data' => $user]);
+      if($actual_user->role_id == 3)
+        return view('admin.usersList', ['list' => $users]);
     }
 
     /**

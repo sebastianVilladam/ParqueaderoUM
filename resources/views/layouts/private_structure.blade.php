@@ -17,8 +17,8 @@
           <img src="img/man.png" id="user-photo">
           <p class="text-center">{{ Auth::user()->name }}</p>
           <li><a href="/favoritos">FAVORITOS</a></li>
-          <li><a href="/Mi cuenta">DATOS DE CUENTA</a></li>
-          <li><a href="/Mis vehiculos">MIS VEHICULOS</a></li>
+          <li><a href="{{route('acountSettings', auth()->id())}}">DATOS DE CUENTA</a></li>
+          <li><a href="{{route('vehicles', auth()->id())}}">MIS VEHICULOS</a></li>
           <li><a href="/parking">PARKING</a></li>
           <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
                document.getElementById('logout-form').submit();">CERRAR SESION</a>
