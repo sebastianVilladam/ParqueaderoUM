@@ -24,12 +24,28 @@
             <li class="nav-item">
               <a class="nav-link" href="/parking">Parking</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/login">Incicar sesion</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/register">Registrarse</a>
-            </li>
+            @guest
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Incicar sesion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/register">Registrarse</a>
+              </li>
+            @else
+              @if(auth()->user()->role_id === 1)
+                <li class="nav-item">
+                  <a class="nav-link" href="/favoritos">Mi cuenta</a>
+                </li>
+              @elseif(auth()->user()->role_id === 2)
+                <li class="nav-item">
+                  <a class="nav-link" href="/seleccion">Seleccion de zona</a>
+                </li>
+              @elseif(auth()->user()->role_id === 3)
+                <li class="nav-item">
+                  <a class="nav-link" href="/listas">Seleccion de tablas</a>
+                </li>
+              @endif
+            @endguest
           </ul>
         </div>
       </div>

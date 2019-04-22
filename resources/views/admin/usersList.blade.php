@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="/css/universitiesList_Style.css">
 @stop
 @section('content')
-<h1>USUARIOS REGISTRADOS LLLL</h1>
+<h1>USUARIOS REGISTRADOS</h1>
 <hr>
 
 <div class="container-fluid padding center" id="table">

@@ -19,6 +19,7 @@
           <li><a href="/favoritos">FAVORITOS</a></li>
           <li><a href="{{route('acountSettings', auth()->id())}}">DATOS DE CUENTA</a></li>
           <li><a href="{{route('vehicles', auth()->id())}}">MIS VEHICULOS</a></li>
+          <li><a href="/">HOME</a></li>
           <li><a href="/parking">PARKING</a></li>
           <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
                document.getElementById('logout-form').submit();">CERRAR SESION</a>

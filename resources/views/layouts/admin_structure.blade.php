@@ -17,7 +17,8 @@
           <img src="img/man.png" id="user-photo">
           <p class="text-center">{{ Auth::user()->name }}</p>
           <li><a href="/listas">SELECCION DE TABLAS</a></li>
-          <li><a href="/parking">DATOS DE CUENTA</a></li>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/parking">PARKING</a></li>
           <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
                document.getElementById('logout-form').submit();">CERRAR SESION</a>
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
