@@ -102,6 +102,19 @@ Route::group(['middleware' => 'adminUser'], function()
   Route::put('/datos del empleado/{id}', 'WatchmanController@update')->name('emSettings');
 
   Route::delete('/empleado/{id}', 'WatchmanController@destroy')->name('emDelete');
+
+//------------------------------------------------------------------------------
+  Route::get('/usuarios', 'UserController@index')->name('users');
+
+  Route::get('/nuevo usuario', 'UserController@create')->name('userAddForm');
+
+  Route::post('/nuevo usuario', 'UserController@store')->name('userAdd');
+
+  Route::get('/datos del usuario/{id}', 'UserController@edit')->name('userSettings');
+
+  Route::put('/datos del usuario/{id}', 'UserController@update')->name('userSettings');
+
+  Route::delete('/empleado/{id}', 'UserController@destroy')->name('userDelete');
 });
 
 Route::get('/error', ['as' => 'public.errorWindow', function() {

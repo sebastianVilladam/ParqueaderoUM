@@ -7,17 +7,17 @@ use Illuminate\Support\Facades\Hash;
 
 use App\User;
 
-class WatchmanController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
-      $watchmen = User::where('uni_id', $id)->get();
-      return view('admin.uEmployees', ['list' => $watchmen])->with('u_id', $id);
+      $users = User::where('role_id', 1)->get();
+      return view('admin.usersList', ['list' => $users]);
     }
 
     /**
@@ -25,9 +25,9 @@ class WatchmanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create($u_id)
+    public function create()
     {
-        return view('admin.emAdd')->with('u_id',$u_id);
+        return view('admin.userAdd');
     }
 
     /**
@@ -41,9 +41,8 @@ class WatchmanController extends Controller
       $input = $request->all();
       $input['password'] = Hash::make($input['password']);
       User::create($input);
-      $id =  $input['uni_id'];
-      $watchmen = User::where('uni_id', $id)->get();
-      return view('admin.uEmployees', ['list' => $watchmen])->with('u_id', $id);
+      $users = User::where('role_id', 1)->get();
+      return view('admin.usersList', ['list' => $users]);
     }
 
     /**
@@ -65,8 +64,8 @@ class WatchmanController extends Controller
      */
     public function edit($id)
     {
-      $watchmen = User::findOrFail($id);
-      return view('admin.emSettings', ['data' => $watchmen]);
+      $user = User::findOrFail($id);
+      return view('admin.userSettings', ['data' => $user]);
     }
 
     /**
@@ -78,12 +77,11 @@ class WatchmanController extends Controller
      */
     public function update(Request $request, $id)
     {
-      $watchman = User::findOrFail($id);
+      $user = User::findOrFail($id);
       $input = $request->all();
-      $watchman->fill($input)->save();
-      $id =  $watchman['uni_id'];
-      $watchmen = User::where('uni_id', $id)->get();
-      return view('admin.uEmployees', ['list' => $watchmen])->with('u_id', $id);
+      $user->fill($input)->save();
+      $users = User::where('role_id', 1)->get();
+      return view('admin.usersList', ['list' => $users]);
     }
 
     /**
@@ -94,10 +92,9 @@ class WatchmanController extends Controller
      */
     public function destroy($id)
     {
-      $watchman = User::findOrFail($id);
-      $u_id = $watchman['uni_id'];
-      $watchman->delete();
-      $watchmen = User::where('uni_id', $u_id)->get();
-      return view('admin.uEmployees', ['list' => $watchmen])->with('u_id', $u_id);
+      $user = User::findOrFail($id);
+      $user->delete();
+      $users = User::where('role_id', 1)->get();
+      return view('admin.usersList', ['list' => $users]);
     }
 }
