@@ -115,6 +115,19 @@ Route::group(['middleware' => 'adminUser'], function()
   Route::put('/datos del usuario/{id}', 'UserController@update')->name('userSettings');
 
   Route::delete('/empleado/{id}', 'UserController@destroy')->name('userDelete');
+
+//------------------------------------------------------------------------------
+  Route::get('/vehiculos/{id}', 'VehicleController@index')->name('userVehicles');
+
+  Route::get('{u_id}/nuevo vehiculo', 'VehicleController@create')->name('vehicleAddForm');
+
+  Route::post('/nuevo vehiculo', 'VehicleController@store')->name('vehicleAdd');
+
+  Route::get('/datos de vehiculo/{id}', 'VehicleController@edit')->name('vehicleSettings');
+
+  Route::put('/datos de vehiculo/{id}', 'VehicleController@update')->name('vehicleSettings');
+
+  Route::delete('/vehiculo/{id}', 'VehicleController@destroy')->name('vehicleDelete');
 });
 
 Route::get('/error', ['as' => 'public.errorWindow', function() {
