@@ -24,5 +24,11 @@ class UniversitiesSeeder extends Seeder
         'email' => 'nacional@mail.com',
         'phone_number'=> '555-555-555'
       ]);
+
+      University::create([
+        'name' => 'Universidad de Caldas',
+        'email' => 'uCaldas@mail.com',
+        'phone_number'=> '555-555-555'
+      ]);
     }
 }
