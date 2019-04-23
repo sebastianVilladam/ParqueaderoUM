@@ -16,66 +16,19 @@
 <!--cards-->
 <div class="container-fluid padding" id="cards-section">
   <div class="row padding">
-    <div class="col-md-4">
-      <div class="card"style="width: 18rem;">
-        <img class="card-imd-top" src="img/university.jpg" >
-        <div class="card-body">
-          <h4 class="card-title">Universidad</h4>
-          <p class="card-text">De la ciudad de Manizales</p>
-          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
+    @forelse($list as $university)
+      <div class="col-md-4">
+        <div class="card"style="width: 18rem;">
+          <img class="card-imd-top" src="img/university.jpg" >
+          <div class="card-body">
+            <h4 class="card-title">{{$university->name}}</h4>
+            <a href="{{route('parkingU', $university->id)}}" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img class="card-imd-top" src="img/university.jpg" >
-        <div class="card-body">
-          <h4 class="card-title">Universidad</h4>
-          <p class="card-text">De la ciudad de Manizales</p>
-          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img class="card-imd-top" src="img/university.jpg" >
-        <div class="card-body">
-          <h4 class="card-title">Universidad</h4>
-          <p class="card-text">De la ciudad de Manizales</p>
-          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img class="card-imd-top" src="img/university.jpg" >
-        <div class="card-body">
-          <h4 class="card-title">Universidad</h4>
-          <p class="card-text">De la ciudad de Manizales</p>
-          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img class="card-imd-top" src="img/university.jpg" >
-        <div class="card-body">
-          <h4 class="card-title">Universidad</h4>
-          <p class="card-text">De la ciudad de Manizales</p>
-          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img class="card-imd-top" src="img/university.jpg" >
-        <div class="card-body">
-          <h4 class="card-title">Universidad</h4>
-          <p class="card-text">De la ciudad de Manizales</p>
-          <a href="/universidad" class="btn btn-outline-secondary" id="btn-card">ver estado</a>
-        </div>
-      </div>
-    </div>
+    @empty
+      <h3>No hay universidades registradas</h3>
+    @endforelse
   </div>
 </div>
 @stop

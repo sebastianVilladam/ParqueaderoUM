@@ -19,7 +19,9 @@ class CreateParkingLotsTable extends Migration
             $table->string('name');
             $table->string('adress');
             $table->string('phone_number');
+            $table->string('schedule');
             $table->smallInteger('capacity');
+            $table->smallInteger('free');
             $table->timestamps();
 
             $table->foreign('university_id')->references('id')->on('universities')->onDelete('restrict')->onUpdate('cascade');

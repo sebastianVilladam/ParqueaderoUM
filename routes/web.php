@@ -24,9 +24,9 @@ Route::get('/', 'Public_Controller@home')->name('home');
 
 Route::get('/parking', 'Public_Controller@parking')->name('parking');
 
-Route::get('/universidad', 'Public_Controller@parkingU')->name('parkingU');
+Route::get('/universidad/{id}', 'Public_Controller@parkingU')->name('parkingU');
 
-Route::get('/parqueadero', 'Public_Controller@parkingLot')->name('parkingLot');
+Route::get('/parqueadero/{id}', 'Public_Controller@parkingLot')->name('parkingLot');
 
 //private side methods invocation
 Route::group(['middleware' => 'standarUser'], function()

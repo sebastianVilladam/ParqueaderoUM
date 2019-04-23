@@ -3,6 +3,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\University;
+use App\ParkingLot;
+
 class Public_Controller extends Controller
 {
   public function home()
@@ -12,17 +15,20 @@ class Public_Controller extends Controller
 
   public function parking()
   {
-    return view('public.universities');
+    $universities = University::all();
+    return view('public.universities', ['list' => $universities]);
   }
 
-  public function parkingU()
+  public function parkingU($id)
   {
-    return view('public.UPage');
+    $parkingLots = ParkingLot::where('university_id', $id)->get();
+    return view('public.UPage', ['list' => $parkingLots]);
   }
 
-  public function parkingLot()
+  public function parkingLot($id)
   {
-    return view('public.parkingLot');
+    $parkingLot = ParkingLot::find($id);
+    return view('public.parkingLot', ['data' => $parkingLot]);
   }
 }
 ?>

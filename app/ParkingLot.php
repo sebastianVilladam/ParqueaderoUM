@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ParkingLot extends Model
 {
-    protected $fillable = ['university_id','name','adress','phone_number','capacity'];
+    protected $fillable = ['university_id','name','adress','phone_number','schedule','capacity','free'];
 
     public function university()
     {

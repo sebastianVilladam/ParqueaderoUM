@@ -20,6 +20,10 @@
     {!! Form::text('phone_number', null, ['class' => 'form-control' , 'placeholder' => '$data->phone_number']) !!}
   </div>
   <div class="form-group">
+    {!! Form::label('schedule', 'HORARIO:', ['class' => 'control-label']) !!}
+    {!! Form::text('schedule', null, ['class' => 'form-control' , 'placeholder' => '$data->schedule']) !!}
+  </div>
+  <div class="form-group">
     {!! Form::label('capacity', 'CAPACIDAD:', ['class' => 'control-label']) !!}
     {!! Form::text('capacity', null, ['class' => 'form-control' , 'placeholder' => '$data->capacity']) !!}
   </div>
