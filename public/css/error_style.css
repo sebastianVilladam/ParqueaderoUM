@@ -1,0 +1,39 @@
+body
+{
+  background: #1a1a1a;
+  color: white;
+}
+
+.container
+{
+  height: 200px;
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
+}
+
+.container h1
+{
+  font-size: 70px;
+  color: #fa0140;
+}
+
+#btn-card
+{
+  background: #1a1a1a;
+  color: #a8a7a8;
+  border-color: #fa0140;
+  border-radius: 0px;
+  border-width: 3px;
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+#btn-card:hover
+{
+  background: #fa0140;
+  color: white;
+}
