@@ -38,7 +38,7 @@
                 </li>
               @elseif(auth()->user()->role_id === 2)
                 <li class="nav-item">
-                  <a class="nav-link" href="/seleccion">Seleccion de zona</a>
+                  <a class="nav-link" href="{{route('selection', auth()->id())}}">Seleccion de zona</a>
                 </li>
               @elseif(auth()->user()->role_id === 3)
                 <li class="nav-item">

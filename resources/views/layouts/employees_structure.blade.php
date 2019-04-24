@@ -16,7 +16,7 @@
         <ul>
           <img src="img/man.png" id="user-photo">
           <p class="text-center">{{ Auth::user()->name }}</p>
-          <li><a href="/seleccion">SELECCION DE ZONA</a></li>
+          <li><a href="{{route('selection', auth()->id())}}">SELECCION DE ZONA</a></li>
           <li><a href="/">HOME</a></li>
           <li><a href="/parking">PARKING</a></li>
           <li><a href="{{ route('logout') }}" onclick="event.preventDefault();

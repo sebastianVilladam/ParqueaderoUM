@@ -28,7 +28,7 @@ class HomeController extends Controller
         if($actual_user->role_id == 1)
           return redirect()->route('fav', ['id' => $actual_user->id]);
         if($actual_user->role_id == 2)
-          return view('employees.selection');
+          return redirect()->route('selection', ['id' => $actual_user->id]);
         if($actual_user->role_id == 3)
           return view('admin.listSelection');
     }

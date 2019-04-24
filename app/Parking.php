@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Parking extends Model
 {
-    protected $fillable = ['vehicle_plate','observations'];
+    protected $fillable = ['parkingLot_id','vehicle_plate','hour','action','observations'];
 
     public function parkingLot()
     {

@@ -45,7 +45,9 @@ class UsersSeeder extends Seeder
         'name' => 'Vigilante 1',
         'email' => 'vigilante1@mail.com',
         'password' => Hash::make(12345678),
-        'role_id' => '2'
+        'role_id' => '2',
+        'uni_id' => '1',
+        'company' => 'Asura seguros'
       ]);
     }
 }

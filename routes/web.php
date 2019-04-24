@@ -63,9 +63,11 @@ Route::group(['middleware' => 'standarUser'], function()
 //Employees side methods invocation
 Route::group(['middleware' => 'watchmanUser'], function()
 {
-  Route::get('/seleccion', 'Employees_controller@selection')->name('selection');
+  Route::get('/seleccion/{id}', 'Employees_controller@selection')->name('selection');
 
-  Route::get('/zonaLaboral', 'Employees_controller@place')->name('place');
+  Route::get('/zonaLaboral/{id}', 'Employees_controller@place')->name('place');
+
+  Route::post('/registro', 'Employees_controller@addParking')->name('addParking');
 
   Route::get('/busqueda', 'Employees_controller@search')->name('search');
 

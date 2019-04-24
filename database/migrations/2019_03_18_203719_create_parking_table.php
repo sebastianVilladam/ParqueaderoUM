@@ -13,13 +13,13 @@ class CreateParkingTable extends Migration
      */
     public function up()
     {
-        Schema::create('parking', function (Blueprint $table) {
+        Schema::create('parkings', function (Blueprint $table) {
             $table->BigIncrements('id');
             $table->unsignedBigInteger('parkingLot_id');
-            $table->string('veichle_plate');
-            $table->dateTime('hour');
+            $table->string('vehicle_plate');
+            $table->time('hour');
             $table->string('action');
-            $table->string('observations');
+            $table->string('observations')->nullable();
             $table->timestamps();
 
             $table->foreign('parkingLot_id')->references('id')->on('parking_lots')->onDelete('restrict')->onUpdate('cascade');
