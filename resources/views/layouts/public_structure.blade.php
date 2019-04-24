@@ -34,7 +34,7 @@
             @else
               @if(auth()->user()->role_id === 1)
                 <li class="nav-item">
-                  <a class="nav-link" href="/favoritos">Mi cuenta</a>
+                  <a class="nav-link" href="{{route('fav', auth()->id())}}">Mi cuenta</a>
                 </li>
               @elseif(auth()->user()->role_id === 2)
                 <li class="nav-item">

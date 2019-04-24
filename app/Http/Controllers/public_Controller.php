@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 
 use App\University;
 use App\ParkingLot;
+use App\Favorite;
 
 class Public_Controller extends Controller
 {
@@ -27,8 +28,22 @@ class Public_Controller extends Controller
 
   public function parkingLot($id)
   {
+    $actual_user = \Auth::user();
+    $favorite = Favorite::where('user_id', $actual_user->id)->where('parkingLot_id', $id)->first();
+    $flag = 0;
+    if($favorite != NULL)
+      $flag = 1;
+
     $parkingLot = ParkingLot::find($id);
-    return view('public.parkingLot', ['data' => $parkingLot]);
+    return view('public.parkingLot', ['data' => $parkingLot])->with('flag',$flag);
+  }
+
+  public function destroy($id)
+  {
+    $actual_user = \Auth::user();
+    $favorite = Favorite::where('user_id', $actual_user->id)->where('parkingLot_id', $id)->first();
+    $favorite->delete();
+    return redirect()->route('parkingLot', ['id' => $id]);
   }
 }
 ?>

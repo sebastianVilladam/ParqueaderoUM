@@ -5,20 +5,22 @@
 @stop
 @section('content')
 <!--parking lot info-->
+<h1>{{$data->name}}</h1><hr>
 <div class="container-fluid padding" id="info">
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-4" id="img-lot">
       <img src="/img/UAM/biblioteca.jpg">
     </div>
     <div class="col-sm-12 col-md-6 col-lg-4">
-      <h4>tel: 123 456 789</h4>
-      <h4>Dirección: Call 12 # 34 56</h4>
-      <h4>Horario: lunes - viernes: 7:00 - 22:30</h4>
-      <h4>sabados: 8:00 - 17:00</h4>
+      <h4>tel: {{$data->phone_number}}</h4>
+      <h4>Dirección: {{$data->adress}}</h4>
+      <h4>Horario: {{$data->schedule}}</h4>
     </div>
     <div class="text-center col-sm-12 col-md-6 col-lg-4">
-      <button type="button" class="btn btn-outline btn-lg" id="btn-head" onclick="location.href='/favoritos'">
-        Regresar</button>
+      <button type="button" class="btn btn-outline btn-lg" id="btn-head" onclick="location.href='{{route('fav',auth()->id())}}'">
+        Regresar</button><br>
+      <button type="button" class="btn btn-outline btn-lg" id="btn-head" onclick="location.href='{{route('favPDelete',$data->id)}}'">
+        Eliminar de favoritos</button><br>
     </div>
   </div>
 </div>
@@ -27,10 +29,10 @@
 <div class="text-center"id="free">
   <div class="row">
     <div class="text-center col-sm-12 col-md-6">
-      <h1>Capacidad: 30</h1>
+      <h1>Capacidad: {{$data->capacity}}</h1>
     </div>
     <div class="text-center col-sm-12 col-md-6">
-      <h1 class="free-text">Disponibles: 12</h1>
+      <h1 class="free-text">Disponibles: {{$data->free}}</h1>
     </div>
   </div>
 </div>

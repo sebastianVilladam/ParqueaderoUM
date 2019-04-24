@@ -31,9 +31,15 @@ Route::get('/parqueadero/{id}', 'Public_Controller@parkingLot')->name('parkingLo
 //private side methods invocation
 Route::group(['middleware' => 'standarUser'], function()
 {
-  Route::get('/favoritos', 'Private_Controller@fav')->name('fav');
+  Route::get('/favoritos/{id}', 'Private_Controller@fav')->name('fav');
 
-  Route::get('/fav', 'Private_controller@favP')->name('favP');
+  Route::get('/fav/{id}', 'Private_controller@favP')->name('favP');
+
+  Route::get('/favorito/{id}', 'Private_controller@destroy')->name('favPDelete');
+
+  Route::get('/favP/{id}', 'Public_controller@destroy')->name('favPDP');
+
+  Route::post('/nuevo favorito', 'Private_Controller@store')->name('favAdd');
 
   Route::get('/historial', 'Private_controller@history')->name('history');
 
@@ -41,11 +47,6 @@ Route::group(['middleware' => 'standarUser'], function()
 
   Route::put('/mi cuenta/{id}', 'UserController@update')->name('acountSettings');
 
-  /*Route::get('/Mis vehiculos', 'Private_controller@vehicles')->name('vehicles');
-
-  Route::get('/Vehiculo', 'Private_controller@vehicleEdit')->name('vehicleEdit');
-
-  Route::get('/Añadir vehiculo', 'Private_controller@vehicleAdd')->name('vehicleAdd');*/
   Route::get('/mis vehiculos/{id}', 'VehicleController@index')->name('vehicles');
 
   Route::get('{u_id}/registrar vehiculo', 'VehicleController@create')->name('veAddForm');

@@ -16,7 +16,7 @@
         <ul>
           <img src="img/man.png" id="user-photo">
           <p class="text-center">{{ Auth::user()->name }}</p>
-          <li><a href="/favoritos">FAVORITOS</a></li>
+          <li><a href="{{route('fav', auth()->id())}}">FAVORITOS</a></li>
           <li><a href="{{route('acountSettings', auth()->id())}}">DATOS DE CUENTA</a></li>
           <li><a href="{{route('vehicles', auth()->id())}}">MIS VEHICULOS</a></li>
           <li><a href="/">HOME</a></li>

@@ -18,7 +18,7 @@
   <div class="text-center">
     <button type="submit" class="btn btn-primary" id="btn-save">Guardar cambios</button>
     <button type="button" class="btn btn-primary" id="btn-save" onclick="location.href='{{route('vehicles', $data->id)}}'">Mis vehiculos</button>
-    <button type="button" class="btn btn-primary" id="btn-cancel" onclick="location.href='{{route('fav')}}'">Cancelar</button>
+    <button type="button" class="btn btn-primary" id="btn-cancel" onclick="location.href='{{route('fav',$data->id)}}'">Cancelar</button>
   </div>
 </div>
 @stop

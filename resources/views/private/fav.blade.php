@@ -9,12 +9,12 @@
 <!--Favorite section-->
 <div class="container-fluid padding center" id="table">
   <div class="list-group">
-    <a href="/fav" class="list-group-item list-group-item-action">Parqueadero biblioteca
-    <span class="badge badge-primary badge-pill">2</span></a>
-    <a href="/fav" class="list-group-item list-group-item-action">Parqueadero fundadores
-    <span class="badge badge-primary badge-pill">5</span></a>
-    <a href="/fav" class="list-group-item list-group-item-action">Parqueadero edf principal
-    <span class="badge badge-primary badge-pill">10</span></a>
+    @forelse($list as $favorite)
+      <a href="{{route('favP', $favorite->id)}}" class="list-group-item list-group-item-action">{{$favorite->name}}
+      <span class="badge badge-primary badge-pill">{{$favorite->free}}</span></a>
+    @empty
+      <h3>Aun no tienes favoritos, ve y busca tus lugares de interes y disfruta de informacion adicional</h3>
+    @endforelse
   </div>
 </div>
 

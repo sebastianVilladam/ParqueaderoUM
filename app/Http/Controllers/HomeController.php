@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Redirect;
 
 class HomeController extends Controller
 {
@@ -23,10 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //return view('home');
         $actual_user = \Auth::user();
         if($actual_user->role_id == 1)
-          return view('private.fav');
+          return redirect()->route('fav', ['id' => $actual_user->id]);
         if($actual_user->role_id == 2)
           return view('employees.selection');
         if($actual_user->role_id == 3)

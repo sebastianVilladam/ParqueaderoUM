@@ -6,7 +6,7 @@
 @section('content')
 <h1>MIS VEHICULOS</h1>
 <hr>
-<button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='{{route('fav')}}'">Volver</button>
+<button type="button" class="btn btn-primary mb-2" id="btn-edit" onclick="location.href='{{route('fav',auth()->id())}}'">Volver</button>
 
 <div class="container-fluid">
   <div class="list-group" id="vehicles-list">
