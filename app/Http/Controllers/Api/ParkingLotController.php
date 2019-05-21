@@ -27,8 +27,9 @@ class ParkingLotController extends BaseApiController
     );
   }
 
-  public function show(ParkingLot $parkingLot)
+  public function show($id)
   {
+    $parkingLot = ParkingLot::find($id);
     return $this->sendResponse(
       $parkingLot, 'ParkingLot retieved successfully'
     );
