@@ -22,3 +22,4 @@ Route::apiResource('universities','Api\UniversityController');
 Route::apiResource('parkinglots','Api\ParkingLotController');
 Route::apiResource('login','Api\LoginController');
 Route::apiResource('favorites','Api\FavoriteController');
+Route::apiResource('ulots','Api\ULotController');
