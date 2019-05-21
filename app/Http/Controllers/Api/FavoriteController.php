@@ -17,7 +17,9 @@ class FavoriteController extends BaseApiController
 
   public function store (Request $request)
   {
-    //
+    $input = $request->all();
+    Favorite::create($input);
+    return $this->sendResponse(null, "Parqueadero añadido a su lista de favoritos");
   }
 
   public function show($id)
@@ -38,8 +40,10 @@ class FavoriteController extends BaseApiController
     //
   }
 
-  public function destroy(University $university)
+  public function destroy($id)
   {
-    //
+    $favorite = Favorite::findOrFail($id);;
+    $favorite->delete();
+    return $this->sendResponse(null, "PArqueadro eliminado de su lista de favoritos");
   }
 }

@@ -27,23 +27,18 @@ class UserController extends BaseApiController
     );
   }
 
-  public function show(User $user)
+  public function show($id)
   {
-    return $this->sendResponse(
-      $user, 'user retieved successfully'
-    );
+    $user = User::findOrFail($id);
+    return $this->sendResponse($user, 'user retieved successfully');
   }
 
-  public function update(Request $request, User $user)
+  public function update(Request $request, $id)
   {
+    $user = User::findOrFail($id);
     $input = $request->all();
-
-    $user -> fill($input);
-    $user -> save();
-
-    return $this ->sendResponse(
-      $user, 'user uodated successfully'
-    );
+    $user->fill($input)->save();
+    return $this ->sendResponse($user, 'user uodated successfully');
   }
 
   public function destroy(User $user)
